@@ -1,5 +1,100 @@
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Top Bar Styling */
+.top-bar {
+    background-color: #444;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.contact-info span {
+    margin-right: 20px;
+}
+
+.contact-info i {
+    margin-right: 8px;
+}
+
+.social-icons a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 20px 40px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 60px; /* Adjust the logo size as needed */
+    margin-right: 20px;
+}
+
+.logo span {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.nav-links li a:hover {
+    color: #888;
+}
+
+/* Book A Table Button */
+.book-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.book-btn:hover {
+    background-color: #555;
+}
+
