@@ -98,3 +98,31 @@ body {
     background-color: #555;
 }
 
+
+/* Hero section */
+.Container {
+    width: min(90%, 1120px);
+    margin: auto;
+}
+.hero-section {
+    margin-top: 5rem;
+
+}
+
+.text-hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2;
+}
+.text-hero-section h2 {
+    font-size: 5rem;
+    font-weight: 400;
+}
+.text-hero-section p {
+    color: #555;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 300;
+}
