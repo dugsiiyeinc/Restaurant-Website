@@ -128,3 +128,30 @@ body {
     font-weight: 300;
 }
 
+
+
+/* foods-section */
+.foods-section {
+    height: 100vh;
+}
+
+.top-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top-links a {
+    font-size: 1.2rem;
+    margin: 2rem;
+   text-decoration: none;
+   color: black;
+   border: 1px solid lightgray;
+   padding: 10px 40px;
+   border-radius: 50px;
+   font-weight: 500;
+}
+
+.first-linking  {
+    background-color: brown;
+    color: #fff !important;
+}
