@@ -99,6 +99,7 @@ body {
 }
 
 
+
 /* Hero section */
 .Container {
     width: min(90%, 1120px);
@@ -126,3 +127,4 @@ body {
     text-align: center;
     font-weight: 300;
 }
+
