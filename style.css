@@ -1,17 +1,4 @@
-<<<<<<< HEAD
 body, html {
-=======
-
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-/* Global Styles */
-body {
-    font-family: Arial, sans-serif;
->>>>>>> 8d9002f362b4aa32b22f90ddaa43bb6c3f54c1a1
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
@@ -119,7 +106,6 @@ header {
     background-color: #a52a2a;
 }
 
-<<<<<<< HEAD
 .image-container {
     position: relative;
     width: 100%;
@@ -195,62 +181,3 @@ header {
     color: white;
 }
 
-=======
-
-
-/* Hero section */
-.Container {
-    width: min(90%, 1120px);
-    margin: auto;
-}
-.hero-section {
-    margin-top: 5rem;
-
-}
-
-.text-hero-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    line-height: 2;
-}
-.text-hero-section h2 {
-    font-size: 5rem;
-    font-weight: 400;
-}
-.text-hero-section p {
-    color: #555;
-    font-size: 1.2rem;
-    text-align: center;
-    font-weight: 300;
-}
-
-
-
-/* foods-section */
-.foods-section {
-    height: 100vh;
-}
-
-.top-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.top-links a {
-    font-size: 1.2rem;
-    margin: 2rem;
-   text-decoration: none;
-   color: black;
-   border: 1px solid lightgray;
-   padding: 10px 40px;
-   border-radius: 50px;
-   font-weight: 500;
-}
-
-.first-linking  {
-    background-color: brown;
-    color: #fff !important;
-}
->>>>>>> 8d9002f362b4aa32b22f90ddaa43bb6c3f54c1a1
