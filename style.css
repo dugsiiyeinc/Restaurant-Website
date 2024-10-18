@@ -180,4 +180,95 @@ header {
     font-size: 1.5em;
     color: white;
 }
+.mobile-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .mobile-video {
+        display: block;
+    }
+
+    .image-container {
+        background-image: none;
+    }
+
+    .content {
+        padding: 30px;
+    }
+
+    .content p {
+        font-size: 1.2em;
+        color: white;
+        margin-bottom: 30px;
+    }
+
+    .content h1 {
+        color: #fff;
+        font-size: 3em;
+        letter-spacing: 3px;
+    }
+
+    .logo img {
+        width: 80px;
+    }
+
+    .logo span {
+        margin-top: 5px;
+        font-size: 26px;
+    }
+
+    .top-bar {
+        display: none;
+    }
+
+    .navbar {
+        height: 50px; 
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 0px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding: 10px 0;
+        z-index: 99;
+    }
+
+    .nav-links li a:hover {
+        color: #10100f;
+    }
+
+    .nav-links li {
+        margin: 5px 0;
+        margin-left: 15px;
+    }
+
+    .hamburger {
+        display: flex;
+        padding: 10px;
+    }
+
+    .book-table {
+        display: none;
+    }
+}
+
+.nav-links.active {
+    display: flex;
+}
+
 
