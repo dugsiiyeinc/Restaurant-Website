@@ -230,7 +230,7 @@ header {
     }
 
     .navbar {
-        height: 50px; 
+        height: 51px; 
         flex-direction: row;
         justify-content: space-between;
         padding: 10px 0px;
