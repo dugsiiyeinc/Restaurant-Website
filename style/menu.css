@@ -13,6 +13,15 @@ body {
     box-sizing: border-box;
 }
 
+img {
+    width: 100%;
+    height: 100%;
+}
+video {
+    width: 100%;
+    height: 100%;
+}
+
 /* Top Bar Styling */
 .top-bar {
     background-color: #444;
@@ -133,10 +142,12 @@ body {
 /* foods-section */
 .foods-section {
     height: 100vh;
+    margin-bottom: 10%;
 }
 
 .top-links {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
@@ -154,4 +165,163 @@ body {
 .first-linking  {
     background-color: brown;
     color: #fff !important;
+}
+
+.buttom-details {
+    padding: 10px;
+}
+.buttoms-sections {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.buttom-img-texts {
+   width: 21rem;
+   height: 28rem;
+    border: 0.5px solid lightgray;
+    border-radius: 6px;
+}
+/* .text-buttoms {
+ border-bottom: 1px solid #000; 
+ border-left: 1px solid #000;
+ border-right: 1px solid #000;
+ padding: 10px;
+ height: 15rem;
+} */
+
+.buttom_1 img {
+    border-radius: 5px 5px 0 0;
+}
+.buttom_1 video {
+    border-radius: 5px 5px 0 0;
+}
+
+.text-buttoms {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    line-height: 1.5;
+}
+.text-buttoms h2 {
+    font-size: 1.5rem;
+    color: brown;
+    padding-bottom: 1rem;
+}
+.text-buttoms h4{
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: black;
+}
+.text-buttoms p {
+    color: #525151;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+@media(max-width: 768px) {
+    .navbar {
+        width: 100%;
+    }
+    .hero-section {
+        height: 100%;
+    }
+    .text-hero-section h2 {
+        font-size: 3rem;
+    }
+    .foods-section {
+        width: 100%;
+        height: 100%;
+        
+    }
+    .buttoms-sections {
+        height: 100%;
+        margin-bottom: 10rem;
+    }
+    .top-links {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+       
+    }
+   
+}
+
+@media(max-width: 480px) {
+    header {
+        width: 100%;
+        
+    }
+    .nav-links {
+        width: 100%;
+        display: none;
+    }
+    .top-bar {
+        width: 100%;
+    }
+
+    .nav-links {
+      
+    }
+    .book-table {
+        display: none;
+    }
+
+    .hero-section {
+        width: 100%;
+        
+    }
+    .text-hero-section h2 {
+        text-align: center;
+        font-size: 3rem;
+        
+    }
+    .top-links a {
+        
+        font-size: 1rem;
+        margin: 2rem;
+       text-decoration: none;
+       color: black;
+       border: 1px solid lightgray;
+       padding: 10px 20px;
+       border-radius: 50px;
+       font-weight: 500;
+    }
+    
+    .top-links {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+    .text-hero-section p {
+        font-size: 1rem;
+    }
+
+
+    .foods-section {
+        width: 100%;
+        height: 100%;
+    }
+
+    .buttom-details {
+        height: 100%;
+    }
+    .buttom-img-texts {
+       
+        width: 22rem;
+        height: 28rem;
+         border: 0.5px solid lightgray;
+         border-radius: 6px;
+     }
+   
+   
 }
