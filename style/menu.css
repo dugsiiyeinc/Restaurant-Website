@@ -239,6 +239,64 @@ video {
     }
 }
 
+.Order-apps {
+    height: 60vh;
+    background-color: #888;
+}
+.apps-test {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 10rem;
+}
+.name-apps h2 {
+    font-size: 2.7rem;
+    font-weight: 300;
+    color: #fff;
+   padding-bottom: 1rem;
+}
+.name-apps p {
+    color: #333;
+    font-size: 1rem;
+}
+.links-apps button {
+    border: none;
+    background-color: #fff;
+    line-height: 2;
+    padding: 10px;
+}
+
+.btn-top-apps  {
+    padding: 10px 20px;
+    font-size: 1.8rem;
+    border-radius: 5px;
+    font-weight: 500;
+    margin: 7px;
+}
+.btn-center-apps {
+    padding: 10px 25px;
+    font-size: 1.8rem;
+    border-radius: 5px;
+    font-weight: 500;
+    margin: 10px;
+    margin-top: 2rem;
+   
+}
+.btn-last-app {
+    padding: 10px 20px;
+    font-size: 1.8rem;
+    border-radius: 5px;
+    font-weight: 500;
+    margin: 7px;
+    margin-top: 2rem;
+    
+}
+
+
+.apps {
+    color: rgb(92, 253, 92);
+}
 /* @media(max-width: ) {
     .navbar {
         width: 100%;
