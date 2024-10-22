@@ -334,7 +334,47 @@ header {
     margin-top: 100px;
 }
 
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between cards */
+}
 
+.service-card {
+    background-color: #f9f9f9; /* Light background for cards */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 15px; /* Inner padding */
+    transition: transform 0.3s; /* Animation for hover effect */
+}
+
+.service-card img {
+    width: 100%; /* Make images responsive */
+    border-radius: 10px 10px 0 0; /* Rounded top corners */
+}
+
+.service-card h3 {
+    font-size: 1.5em; /* Title size */
+    margin: 10px 0; /* Margin for spacing */
+}
+
+.service-card p {
+    font-size: 0.9em; /* Description size */
+    color: #666; /* Description color */
+}
+
+.service-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+.services-container h2 {
+    font-size: 2.5em; /* Larger font size for emphasis */
+    color: #333; /* Dark gray color for better contrast */
+    margin-bottom: 20px; /* Space below the heading */
+    font-weight: bold; /* Make the font bold */
+    text-align: center; /* Center the heading */
+    text-transform: uppercase; /* Uppercase letters for a modern look */
+    letter-spacing: 1px; /* Slight spacing between letters */
+}
 
 /* Responsive styles for mobile devices */
 
