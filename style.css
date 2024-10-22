@@ -190,8 +190,243 @@ header {
     z-index: -1;
     display: none;
 }
+.menu-section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.menu-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.menu-card {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    width: 23%;
+    transition: box-shadow 0.3s ease;
+}
+
+.menu-card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.icon img {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.menu-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.menu-card p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.menu-link {
+    color: #b02e2e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-link:hover {
+    color: #a52a2a;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.image-side {
+    position: relative;
+    width: 50%;
+}
+
+.image-side img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.visit-us-card {
+    margin-left: 24pc;
+   
+    position: absolute;
+    top: 230px;
+    left: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.visit-us-card h3 {
+    
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.visit-us-card p {
+    
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.text-side {
+    width: 45%;
+    padding-left: 20px;
+}
+
+.text-side h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.text-side p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.more-info-btn {
+    
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #333;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.more-info-btn:hover {
+    background-color: #333;
+    color: #fff;
+}
+.services-container {
+    text-align: center; /* Center text for the header */
+    margin: 20px 0; /* Margin for spacing */
+    margin-top: 100px;
+}
+
+
+/* Responsive styles for mobile devices */
+
+
 
 @media screen and (max-width: 768px) {
+    .services-container h2 {
+        font-size: 2em; /* Slightly smaller font size on mobile */
+        margin-bottom: 15px; /* Reduced margin for mobile */
+    }
+    .services {
+        grid-template-columns: 1fr; /* Single column on mobile */
+    }
+
+    .service-card {
+        margin: 0 10px; /* Add margin for spacing */
+    }
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .image-side, .text-side {
+        width: 100%;
+    }
+
+    .text-side {
+        padding-left: 0;
+        margin-top: 20px;
+    }
+    .visit-us-card {
+        position: static; /* Remain inline */
+        width: 90%; /* Full width on mobile */
+        margin-top: 20px; /* Space below the image */
+        margin-left: 20px; /* Shift content slightly to the right on mobile */
+        padding: 20px; /* Add padding for better spacing */
+        box-sizing: border-box; /* Ensure padding doesn't overflow the card width */
+    }
+    
+
+    .visit-us-card h3 {
+        font-size: 1.2em; /* Adjust font size for mobile */
+    }
+
+    .visit-us-card p {
+        font-size: 0.9em; /* Slightly smaller text */
+    }
+
+    .text-side h2 {
+        margin: 10px;
+        font-size: 2em; /* Slightly smaller heading */
+        padding: 10px 0; /* Adds padding at the top and bottom */
+    }
+    .text-side p {
+        margin: 10px;
+        font-size: 1em; /* Adjust the size of the paragraph text */
+        padding: 10px 0; /* Adds padding at the top and bottom */
+        line-height: 1.5; /* Increases line spacing for better readability */
+    }
+    .button-container {
+        display: flex;
+        justify-content: center; /* Centers the button horizontally */
+        width: 100%; /* Ensures full width of the container */
+        margin-top: 20px; /* Optional: Add spacing from the content above */
+    }
+
+    .more-info-btn {
+        padding: 10px 20px; /* Button padding */
+        background-color: #b02e2e;
+        color: white;
+        text-decoration: none;
+        border-radius: 25px;
+        font-size: 16px;
+    }
+
+    .more-info-btn:hover {
+        background-color: #a52a2a;
+    }
+    
+    
+    .menu-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .menu-section h2 {
+        font-size: 2em;
+    }
     .mobile-video {
         display: block;
     }
