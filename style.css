@@ -382,7 +382,7 @@ header {
 
 @media screen and (max-width: 768px) {
     .services-container h2 {
-        font-size: 2em; /* Slightly smaller font size on mobile */
+        font-size: 2em; 
         margin-bottom: 15px; /* Reduced margin for mobile */
     }
     .services {
