@@ -294,6 +294,8 @@ video {
 }
 
 
+
+
 .apps {
     color: rgb(92, 253, 92);
 }
@@ -403,6 +405,39 @@ video {
          border: 0.5px solid lightgray;
          border-radius: 6px;
      }
+
+
+     .Order-apps {
+        width: 100%;
+        height: 100%;
+     }
+     .top-apss, .center-apps, .last-apps {
+        padding-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+     }
+     .btn-top-apps  {
+        padding: 5px 20px;
+        font-size: 0.8rem;
+        border-radius: 5px;
+        font-weight: 500;
+    }
+
+     .btn-center-apps {
+        padding: 5px 20px;
+        font-size: 0.8rem;
+        border-radius: 5px;
+        font-weight: 500;
+       
+    }
+    .btn-last-app {
+        padding: 5px 20px;
+        font-size: 0.8rem;
+        border-radius: 5px;
+        font-weight: 500;
+        
+    }
    
    
 }
