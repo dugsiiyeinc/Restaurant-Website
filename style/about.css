@@ -121,7 +121,8 @@ video {
 
 .image-section {
     position: relative;
-    width: 45%;
+    width: 100%;
+    margin-left: -100px;
 }
 
 .image-section img {
