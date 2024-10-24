@@ -4,7 +4,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 /* Global Styles */
 body {
     font-family: "Poppins", sans-serif;
@@ -12,7 +11,6 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
-
 img {
     width: 100%;
     height: 100%;
@@ -21,7 +19,6 @@ video {
     width: 100%;
     height: 100%;
 }
-
 /* Top Bar Styling */
 .top-bar {
     background-color: #444;
@@ -32,22 +29,18 @@ video {
     align-items: center;
     padding: 0 40px;
 }
-
 .contact-info span {
     margin-right: 20px;
 }
-
 .contact-info i {
     margin-right: 8px;
 }
-
 .social-icons a {
     color: white;
     margin-left: 15px;
     text-decoration: none;
     font-size: 1.2em;
 }
-
 /* Navbar Styling */
 .navbar {
     display: flex;
@@ -56,42 +49,34 @@ video {
     background-color: #f4f4f4;
     padding: 20px 50px;
 }
-
 .logo {
     display: flex;
     align-items: center;
 }
-
 .logo img {
     width: 60px; /* Adjust the logo size as needed */
     margin-right: 20px;
 }
-
 .logo span {
     font-size: 28px;
     font-weight: bold;
     color: #333;
 }
-
 .nav-links {
     list-style: none;
     display: flex;
 }
-
 .nav-links li {
     margin: 0 15px;
 }
-
 .nav-links li a {
     text-decoration: none;
     color: #333;
     font-size: 18px;
 }
-
 .nav-links li a:hover {
     color: #888;
 }
-
 /* Book A Table Button */
 .book-btn {
     display: inline-block;
@@ -102,13 +87,9 @@ video {
     text-decoration: none;
     font-size: 16px;
 }
-
 .book-btn:hover {
     background-color: #555;
 }
-
-
-
 /* Hero section */
 .Container {
     width: min(90%, 1120px);
@@ -116,9 +97,7 @@ video {
 }
 .hero-section {
     margin-top: 5rem;
-
 }
-
 .text-hero-section {
     display: flex;
     flex-direction: column;
@@ -136,15 +115,11 @@ video {
     text-align: center;
     font-weight: 300;
 }
-
-
-
 /* foods-section */
 .foods-section {
     height: 100vh;
     margin-bottom: 10%;
 }
-
 .top-links {
     display: flex;
     flex-wrap: wrap;
@@ -161,12 +136,10 @@ video {
    border-radius: 50px;
    font-weight: 500;
 }
-
 .first-linking  {
     background-color: brown;
     color: #fff !important;
 }
-
 .buttom-details {
     padding: 10px;
 }
@@ -176,7 +149,6 @@ video {
     gap: 20px;
     flex-wrap: wrap;
 }
-
 .buttom-img-texts {
    width: 21rem;
    height: 28rem;
@@ -190,14 +162,12 @@ video {
  padding: 10px;
  height: 15rem;
 } */
-
 .buttom_1 img {
     border-radius: 5px 5px 0 0;
 }
 .buttom_1 video {
     border-radius: 5px 5px 0 0;
 }
-
 .text-buttoms {
     display: flex;
     flex-direction: column;
@@ -222,10 +192,6 @@ video {
     padding-top: 1rem;
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-
-
-
-
     .foods-section {
         height: 100%;
     }
@@ -235,10 +201,8 @@ video {
         grid-template-rows: repeat(2, 1fr);
         justify-content: center;
         align-items: center;
-       
     }
 }
-
 .Order-apps {
     height: 60vh;
     background-color: #888;
@@ -266,7 +230,6 @@ video {
     line-height: 2;
     padding: 10px;
 }
-
 .btn-top-apps  {
     padding: 10px 20px;
     font-size: 1.8rem;
@@ -281,7 +244,6 @@ video {
     font-weight: 500;
     margin: 10px;
     margin-top: 2rem;
-   
 }
 .btn-last-app {
     padding: 10px 20px;
@@ -290,10 +252,7 @@ video {
     font-weight: 500;
     margin: 7px;
     margin-top: 2rem;
-    
 }
-
-
 .apps {
     color: rgb(92, 253, 92);
 }
@@ -322,16 +281,11 @@ video {
         grid-template-rows: repeat(2, 1fr);
         justify-content: center;
         align-items: center;
-       
     }
-   
-
 } */
 /* Mobile Menus */
 @media(max-width: 768px) {
-
 }
-
 @media(max-width: 767px) {
 
     header {
@@ -360,10 +314,8 @@ video {
     .text-hero-section h2 {
         text-align: center;
         font-size: 3rem;
-        
     }
     .top-links a {
-        
         font-size: 0.8rem;
         margin: 2rem;
        text-decoration: none;
@@ -373,7 +325,6 @@ video {
        border-radius: 50px;
        font-weight: 500;
     }
-    
     .top-links {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -382,12 +333,9 @@ video {
         align-items: center;
        
     }
-
     .text-hero-section p {
         font-size: 1rem;
     }
-
-
     .foods-section {
         width: 100%;
         height: 100%;
@@ -397,12 +345,9 @@ video {
         height: 100%;
     }
     .buttom-img-texts {
-       
         width: 22rem;
         height: 28rem;
          border: 0.5px solid lightgray;
          border-radius: 6px;
      }
-   
-   
 }
