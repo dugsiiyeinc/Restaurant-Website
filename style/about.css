@@ -236,3 +236,141 @@ video {
         font-size: 12px;
     }
 }
+
+/* Information Section */
+.info-section {
+    background-color: #fff;
+    padding: 50px;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.info-text {
+    max-width: 600px;
+}
+
+.info-text h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.info-text p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.info-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.info-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.info-card h3 {
+    font-size: 2rem;
+    color: #0f0f0f;
+    margin-bottom: 10px;
+}
+
+.info-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.image-container {
+    width: 80%;
+    height: 200%;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-left: 80px;
+    margin-bottom: -180px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-container img {
+    width: 100%;
+    max-height: 100%;
+    display: block;
+   
+}
+
+
+/* Testimonials Section */
+.testimonial-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.testimonial-section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+}
+
+.testimonial-card blockquote {
+    font-size: 1.2rem;
+    color: #e74c3c;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.testimonial-card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.customer-info {
+    display: flex;
+    align-items: center;
+}
+
+.customer-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.customer-info h4 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.customer-info span {
+    font-size: 0.9rem;
+    color: #999;
+}
+
