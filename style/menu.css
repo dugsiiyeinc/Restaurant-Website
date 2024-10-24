@@ -253,6 +253,8 @@ video {
     margin: 7px;
     margin-top: 2rem;
 }
+
+
 .apps {
     color: rgb(92, 253, 92);
 }
@@ -350,4 +352,6 @@ video {
          border: 0.5px solid lightgray;
          border-radius: 6px;
      }
+   
+   
 }
