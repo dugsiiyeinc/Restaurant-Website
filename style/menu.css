@@ -226,9 +226,55 @@ video {
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 
+    .logo img {
+        width: 82px;
+    }
+    .logo span {
+        margin-top: 5px;
+        font-size: 26px;
+    }
+    .top-bar {
+        display: none;
+    }
+    .navbar {
+        height: 51px; 
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 0px;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding: 10px 0;
+        z-index: 99;
+    }
+    .nav-links li a:hover {
+        color: #10100f;
+    }
+    .nav-links li {
+        margin: 5px 0;
+        margin-left: 15px;
+    }
+    .hamburger {
+        display: flex;
+        padding: 10px;
+    }
+    .book-table {
+        display: none;
+    }
+    .nav-links.active {
+        display: flex;
+    }
 
-
-
+    /* .nav-links {
+        width: 100%;
+        display: none;
+    } */
     .foods-section {
         height: 100%;
     }
@@ -240,6 +286,13 @@ video {
         align-items: center;
        
     }
+    .buttom-img-texts {
+        width: 20rem;
+        height: 28rem;
+         border: 0.5px solid lightgray;
+         border-radius: 6px;
+        
+     }
 }
 
 .Order-apps {
@@ -295,12 +348,18 @@ video {
     
 }
 
+.Order-apps {
+    width: 100%;
+    height: 100%;
+   
+ }
 
 
 
 .apps {
     color: rgb(92, 253, 92);
 }
+
 /* @media(max-width: ) {
     .navbar {
         width: 100%;
@@ -332,10 +391,6 @@ video {
 
 } */
 /* Mobile Menus */
-@media(max-width: 768px) {
-
-}
-
 @media(max-width: 767px) {
 
     header {
@@ -401,7 +456,6 @@ video {
         height: 100%;
     }
     .buttom-img-texts {
-       
         width: 22rem;
         height: 28rem;
          border: 0.5px solid lightgray;
@@ -412,12 +466,14 @@ video {
      .Order-apps {
         width: 100%;
         height: 100%;
+       
      }
      .top-apss, .center-apps, .last-apps {
         padding-top: 2rem;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(1, 1fr);
+        margin-bottom: 6%;
      }
      .btn-top-apps  {
         padding: 5px 20px;
