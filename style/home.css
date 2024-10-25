@@ -1,0 +1,972 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    
+    color: #fff;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    height: 40px; 
+}
+header .sticky {
+    background-color: orange; 
+}
+
+.top-bar {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-info span {
+    margin-right: 20px;
+}
+
+.contact-info i {
+    margin-right: 8px;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons a {
+    color: white;
+    margin-left: 15px;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ddd;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px 50px;
+    height: 40%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 60px;
+    margin-right: 20px;
+}
+
+.logo span {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;   
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.nav-links li a:hover {
+    color: #100f0f;
+}
+
+.book-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #b02e2e;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.book-btn:hover {
+    background-color: #a52a2a;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('images/background.png');
+    background-size: cover;
+    background-position: center;
+}
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    font-weight: 500;
+    color: #000000;
+    letter-spacing: 5px;
+    margin-bottom: 0px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.content p {
+    font-size: 1.2em;
+    color: #100f0f;
+    margin-bottom: 30px;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 15px 30px;
+    margin: 0 15px;
+    border-radius: 25px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.book-btn {
+    background-color: #b02e2e;
+    color: white;
+}
+
+.explore-btn {
+    background-color: chocolate;
+    border: 2px solid white;
+    color: white;
+}
+
+.book-btn:hover {
+    background-color: #a52a2a;
+}
+
+.explore-btn:hover {
+    background-color: white;
+    color: #333;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: white;
+}
+.mobile-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    display: none;
+}
+.menu-section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.menu-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.menu-card {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    width: 23%;
+    transition: box-shadow 0.3s ease;
+}
+
+.menu-card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.icon img {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.menu-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.menu-card p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.menu-link {
+    color: #b02e2e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-link:hover {
+    color: #a52a2a;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.image-side {
+    position: relative;
+    width: 50%;
+}
+
+.image-side img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.visit-us-card {
+    margin-left: 24pc;
+   
+    position: absolute;
+    top: 230px;
+    left: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.visit-us-card h3 {
+    
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.visit-us-card p {
+    
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.text-side {
+    width: 45%;
+    padding-left: 20px;
+}
+
+.text-side h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.text-side p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.more-info-btn {
+    
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #333;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.more-info-btn:hover {
+    background-color: #333;
+    color: #fff;
+}
+.services-container {
+    text-align: center; /* Center text for the header */
+    margin: 20px 0; /* Margin for spacing */
+    margin-top: 100px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between cards */
+}
+
+.service-card {
+    background-color: #f9f9f9; /* Light background for cards */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 15px; /* Inner padding */
+    transition: transform 0.3s; /* Animation for hover effect */
+}
+
+.service-card img {
+    width: 100%; /* Make images responsive */
+    border-radius: 10px 10px 0 0; /* Rounded top corners */
+}
+
+.service-card h3 {
+    font-size: 1.5em; /* Title size */
+    margin: 10px 0; /* Margin for spacing */
+}
+
+.service-card p {
+    font-size: 0.9em; /* Description size */
+    color: #666; /* Description color */
+}
+
+.service-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+.services-container h2 {
+    font-size: 2.5em; /* Larger font size for emphasis */
+    color: #333; /* Dark gray color for better contrast */
+    margin-bottom: 20px; /* Space below the heading */
+    font-weight: bold; /* Make the font bold */
+    text-align: center; /* Center the heading */
+    text-transform: uppercase; /* Uppercase letters for a modern look */
+    letter-spacing: 1px; /* Slight spacing between letters */
+}
+.food-delivery-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.image-grid {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "image1 image2"
+        "image1 image3";
+    gap: 15px;
+}
+
+.image-item:nth-child(1) {
+    grid-area: image1;
+}
+
+.image-item:nth-child(2) {
+    grid-area: image2;
+    
+}
+
+.image-item:nth-child(3) {
+    grid-area: image3;
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+   
+}
+
+.delivery-info {
+    max-width: 400px;
+    padding-left: 30px;
+    margin-bottom: 30%;
+}
+
+.delivery-info h1 {
+    font-size: 2.5em;
+}
+
+.delivery-info p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.delivery-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.delivery-info ul li {
+    font-size: 1.2em;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.delivery-info ul li::before {
+    content: " "; /* Empty content so we can style it */
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 77, 0); /* Set background color to orange */
+    border-radius: 50%; /* Make the background circular */
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    color: white;
+}
+
+.delivery-info ul li:nth-child(1)::before {
+    content: "📦";
+}
+
+.delivery-info ul li:nth-child(2)::before {
+    content: "💸";
+}
+
+.delivery-info ul li:nth-child(3)::before {
+    content: "📱";
+}
+/* Base styling for the testimonial section */
+.testimonials {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    font-family: 'Arial', sans-serif;
+}
+
+.testimonials h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 300px;
+    flex-grow: 1;
+    margin: 10px;
+}
+
+.testimonial h3 {
+    color: #D9534F; /* Highlighted color for the title */
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.testimonial p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.customer-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.customer-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.customer-info h4 {
+    font-size: 1.1em;
+    margin: 0;
+    color: #333;
+}
+
+.customer-info p {
+    font-size: 0.9em;
+    color: #999;
+}
+/* Blog Section Styles */
+.blog-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+.blog-section h2 {
+    display: flex;
+    font-size: 2.5em;
+    margin-bottom: 8%; /* Adjusted for clarity */
+    color: #333;
+}
+
+.read-all {
+    margin-bottom: 8%; /* Adjusted for clarity */
+    padding: 10px 20px;
+    background-color: #D9534F;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+    grid-gap: 20px;
+}
+
+.blog-item {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.blog-item:hover {
+    transform: translateY(-10px);
+}
+
+.blog-item img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+}
+
+.blog-content {
+    padding: 15px;
+    text-align: left;
+}
+
+.blog-date {
+    font-size: 0.9em;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.blog-content h3 {
+    font-size: 1.3em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.blog-content p {
+    font-size: 0.95em;
+    color: #555;
+}
+
+/* Special styles for the big blog item */
+.blog-item.big {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.blog-item.small {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+.text-section {
+    text-align: center;
+    margin: 40px 0; /* Space between sections */
+}
+
+.text-section h2 {
+    font-size: 2em; /* Adjust size as needed */
+    color: #333;
+}
+
+.text-section p {
+    margin: 20px 0; /* Space between the paragraph and buttons */
+    color: #666; /* Lighter color for text */
+}
+
+.text-section .read-all {
+    margin-top: 20px; /* Space above button */
+    padding: 10px 20px;
+    background-color: #D9534F;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+}
+footer {
+    padding: 40px;
+    background-color: #2e2e2e;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    width: 23%;
+    margin-bottom: 20px;
+}
+
+.logo-section h2 {
+    font-size: 24px;
+}
+
+.logo-section p {
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+.social-icons img, .social-icons i {
+    width: 20px;
+    height: 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: white;
+}
+
+.footer-section ul {
+    list-style: none;
+    color: white;
+}
+
+.footer-section ul li {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.instagram-gallery {
+    display: flex;
+    gap: 10px;
+}
+
+.instagram-gallery img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #bbb;
+}
+
+.footer-bottom p {
+    border-top: 1px solid #444;
+    padding-top: 20px;
+}
+
+
+
+/* Responsive design for smaller screens */
+
+
+
+
+@media screen and (max-width: 768px) {
+    .footer-container {
+        display: block;
+        text-align: center;
+    }
+
+    .footer-section {
+        width: 100%;
+    }
+
+    .instagram-gallery {
+        justify-content: center;
+    }
+
+    .instagram-gallery img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .social-icons {
+        margin: 20px 0;
+    }
+
+    .social-icons a {
+        margin-right: 15px;
+    }
+
+    .footer-bottom {
+        margin-top: 30px;
+    }
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+    .testimonial-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial {
+        max-width: 90%;
+    }
+    .delivery-info {
+        max-width: 100%; /* Allow the container to take full width */
+        padding-left: 0; /* Remove padding to center the content */
+        text-align: center; /* Center the text for smaller screens */
+        margin-bottom: 20%; /* Adjust margin for smaller screens */
+    }
+
+    .delivery-info h1 {
+        font-size: 2em; /* Make the title slightly smaller */
+    }
+
+    .delivery-info p {
+        font-size: 1em; /* Reduce the paragraph font size for readability */
+        margin-bottom: 15px; /* Adjust spacing below paragraph */
+    }
+
+    .delivery-info ul li {
+        font-size: 1em; /* Slightly reduce list item text size */
+    }
+
+    .delivery-info ul li::before {
+        width: 24px; /* Make the icon background smaller */
+        height: 24px; /* Smaller icon background for mobile */
+        font-size: 1.2em; /* Adjust the icon size */
+    }
+    .services-container h2 {
+        font-size: 2em; 
+        margin-bottom: 15px; 
+    }
+    .services {
+        grid-template-columns: 1fr; /* Single column on mobile */
+    }
+
+    .service-card {
+        margin: 0 10px; /* Add margin for spacing */
+    }
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .image-side, .text-side {
+        width: 100%;
+    }
+
+    .text-side {
+        padding-left: 0;
+        margin-top: 20px;
+    }
+    .visit-us-card {
+        position: static; /* Remain inline */
+        width: 90%; /* Full width on mobile */
+        margin-top: 20px; /* Space below the image */
+        margin-left: 20px; /* Shift content slightly to the right on mobile */
+        padding: 20px; /* Add padding for better spacing */
+        box-sizing: border-box; /* Ensure padding doesn't overflow the card width */
+    }
+    
+
+    .visit-us-card h3 {
+        font-size: 1.2em; /* Adjust font size for mobile */
+    }
+
+    .visit-us-card p {
+        font-size: 0.9em; /* Slightly smaller text */
+    }
+
+    .text-side h2 {
+        margin: 10px;
+        font-size: 2em; /* Slightly smaller heading */
+        padding: 10px 0; /* Adds padding at the top and bottom */
+    }
+    .text-side p {
+        margin: 10px;
+        font-size: 1em; /* Adjust the size of the paragraph text */
+        padding: 10px 0; /* Adds padding at the top and bottom */
+        line-height: 1.5; /* Increases line spacing for better readability */
+    }
+    .button-container {
+        display: flex;
+        justify-content: center; /* Centers the button horizontally */
+        width: 100%; /* Ensures full width of the container */
+        margin-top: 20px; /* Optional: Add spacing from the content above */
+    }
+
+    .more-info-btn {
+        padding: 10px 20px; /* Button padding */
+        background-color: #b02e2e;
+        color: white;
+        text-decoration: none;
+        border-radius: 25px;
+        font-size: 16px;
+    }
+
+    .more-info-btn:hover {
+        background-color: #a52a2a;
+    }
+    
+    
+    .menu-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .menu-section h2 {
+        font-size: 2em;
+    }
+    .mobile-video {
+        display: block;
+    }
+
+    .image-container {
+        background-image: none;
+    }
+
+    .content {
+        padding: 30px;
+    }
+
+    .content p {
+        font-size: 1.2em;
+        color: white;
+        margin-bottom: 30px;
+    }
+
+    .content h1 {
+        color: #fff;
+        font-size: 3em;
+        letter-spacing: 3px;
+    }
+
+    .logo img {
+        width: 82px;
+    }
+
+    .logo span {
+        margin-top: 5px;
+        font-size: 26px;
+    }
+
+    .top-bar {
+        display: none;
+    }
+
+    .navbar {
+        height: 51px; 
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 0px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding: 10px 0;
+        z-index: 99;
+    }
+
+    .nav-links li a:hover {
+        color: #10100f;
+    }
+
+    .nav-links li {
+        margin: 5px 0;
+        margin-left: 15px;
+    }
+
+    .hamburger {
+        display: flex;
+        padding: 10px;
+    }
+
+    .book-table {
+        display: none;
+    }
+}
+
+.nav-links.active {
+    display: flex;
+}
+
+
