@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maalin Coffee | Menu page</title>
     <link rel="stylesheet" href="./style/menu.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
   <body>
     <header>
@@ -20,25 +24,26 @@
           <a href="#"><i class="fab fa-github"></i></a>
         </div>
       </div>
-
       <nav class="navbar">
         <div class="logo">
           <img src="images/logoc.png" alt="Maalin Coffee logo" />
           <span>Maalin Coffee</span>
         </div>
-        <ul class="nav-links">
-          <li><a href="Home.html">Home</a></li>
+        <div class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="#">Menu</a></li>
+          <li><a href="menu.html">Menu</a></li>
           <li><a href="#">Pages</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
         <div class="book-table">
           <a href="#" class="book-btn">Book A Table</a>
         </div>
       </nav>
     </header>
-
     <section>
       <div class="hero-section Container">
         <div class="text-hero-section">
@@ -208,5 +213,60 @@
         </div>
       </div>
     </div>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section logo-section">
+          <h2>Bistro Bliss</h2>
+          <p>
+            In the new era of technology we look in the future with certainty
+            and pride for our company and.
+          </p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="footer-section pages-section">
+          <h3>Pages</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Delivery</a></li>
+          </ul>
+        </div>
+        <div class="footer-section utility-section">
+          <h3>Utility Pages</h3>
+          <ul>
+            <li><a href="#">Start Here</a></li>
+            <li><a href="#">Styleguide</a></li>
+            <li><a href="#">Password Protected</a></li>
+            <li><a href="#">404 Not Found</a></li>
+            <li><a href="#">Licenses</a></li>
+            <li><a href="#">Changelog</a></li>
+            <li><a href="#">View More</a></li>
+          </ul>
+        </div>
+        <div class="footer-section instagram-section">
+          <h3>Follow Us On Instagram</h3>
+          <div class="instagram-gallery">
+            <img src="images/12.png" alt="Food 1" />
+            <img src="images/13.png" alt="Food 2" />
+            <img src="images/14.png" alt="Food 3" />
+            <img src="images/15.png" alt="Food 4" />
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Maalin Coffee. All Rights Reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>
