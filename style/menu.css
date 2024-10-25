@@ -72,6 +72,9 @@ video {
     font-weight: bold;
     color: #333;
 }
+.logo img {
+    color: #333 !important;
+}
 
 .nav-links {
     list-style: none;
@@ -266,7 +269,6 @@ video {
     line-height: 2;
     padding: 10px;
 }
-
 .btn-top-apps  {
     padding: 10px 20px;
     font-size: 1.8rem;
