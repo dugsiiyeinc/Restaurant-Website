@@ -442,7 +442,7 @@ footer {
     height: 100%;
    
  }
- .footer-container {
+/* .footer-container {
     display: block;
     text-align: center;
 }
@@ -470,7 +470,7 @@ footer {
 
 .footer-bottom {
     margin-top: 30px;
-}
+} */
 .apps {
     color: rgb(92, 253, 92);
 }
@@ -516,6 +516,9 @@ footer {
         display: none;
     }
     .top-bar {
+        display: none;
+    }
+    .top-bar {
         width: 100%;
     }
 
@@ -536,7 +539,6 @@ footer {
         
     }
     .top-links a {
-        
         font-size: 0.8rem;
         margin: 2rem;
        text-decoration: none;
