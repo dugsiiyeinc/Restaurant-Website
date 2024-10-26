@@ -511,6 +511,10 @@ footer {
         width: 100%;
         
     }
+    .hamburger {
+        display: flex;
+        padding: 10px;
+    }
     .nav-links {
         width: 100%;
         display: none;
