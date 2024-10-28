@@ -9,3 +9,10 @@ This Project Developed
 1. Ayub Abdi Ibrahim
 2. Hassan Dahir Saciid
 3. Hawa Mohamed 
+
+# Website Sections
+- Home: Contain More sections like Articles and more features
+- About: Contain testimonials Costomers
+- Menu: contian Foods and Drinks
+- Pages: contain more sections Our Blog
+- Contact: this page Contant of Restaurant like email, phone, locations
