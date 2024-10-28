@@ -4,7 +4,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 /* Global Styles */
 body {
     font-family: "Poppins", sans-serif;
@@ -12,7 +11,6 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
-
 img {
     width: 100%;
     height: 100%;
@@ -21,7 +19,6 @@ video {
     width: 100%;
     height: 100%;
 }
-
 /* Top Bar Styling */
 .top-bar {
     background-color: #444;
@@ -32,22 +29,18 @@ video {
     align-items: center;
     padding: 0 40px;
 }
-
 .contact-info span {
     margin-right: 20px;
 }
-
 .contact-info i {
     margin-right: 8px;
 }
-
 .social-icons a {
     color: white;
     margin-left: 15px;
     text-decoration: none;
     font-size: 1.2em;
 }
-
 /* Navbar Styling */
 .navbar {
     display: flex;
@@ -57,50 +50,35 @@ video {
     padding: 20px 50px;
 }
 
-.hamburger {
-    display: none;
-    cursor: pointer;
-    font-size: 1.5em;
-    color: black;
-}
 .logo {
     display: flex;
     align-items: center;
 }
-
 .logo img {
     width: 60px; /* Adjust the logo size as needed */
     margin-right: 20px;
 }
-
 .logo span {
     font-size: 28px;
     font-weight: bold;
     color: #333;
-}
-.logo img {
-    color: #333 !important;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
 }
-
 .nav-links li {
     margin: 0 15px;
 }
-
 .nav-links li a {
     text-decoration: none;
     color: #333;
     font-size: 18px;
 }
-
 .nav-links li a:hover {
     color: #888;
 }
-
 /* Book A Table Button */
 .book-btn {
     display: inline-block;
@@ -111,13 +89,9 @@ video {
     text-decoration: none;
     font-size: 16px;
 }
-
 .book-btn:hover {
     background-color: #555;
 }
-
-
-
 /* Hero section */
 .Container {
     width: min(90%, 1120px);
@@ -125,9 +99,7 @@ video {
 }
 .hero-section {
     margin-top: 5rem;
-
 }
-
 .text-hero-section {
     display: flex;
     flex-direction: column;
@@ -145,15 +117,11 @@ video {
     text-align: center;
     font-weight: 300;
 }
-
-
-
 /* foods-section */
 .foods-section {
     height: 100vh;
     margin-bottom: 10%;
 }
-
 .top-links {
     display: flex;
     flex-wrap: wrap;
@@ -170,12 +138,10 @@ video {
    border-radius: 50px;
    font-weight: 500;
 }
-
 .first-linking  {
     background-color: brown;
     color: #fff !important;
 }
-
 .buttom-details {
     padding: 10px;
 }
@@ -185,7 +151,6 @@ video {
     gap: 20px;
     flex-wrap: wrap;
 }
-
 .buttom-img-texts {
    width: 21rem;
    height: 28rem;
@@ -199,14 +164,12 @@ video {
  padding: 10px;
  height: 15rem;
 } */
-
 .buttom_1 img {
     border-radius: 5px 5px 0 0;
 }
 .buttom_1 video {
     border-radius: 5px 5px 0 0;
 }
-
 .text-buttoms {
     display: flex;
     flex-direction: column;
@@ -317,66 +280,9 @@ footer {
 /* Tablet Menu */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 
-    .logo img {
-        width: 82px;
-    }
-    .logo span {
-        margin-top: 5px;
-        font-size: 26px;
-    }
-    .top-bar {
-        display: none;
-    }
-    .navbar {
-        height: 51px; 
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 10px 0px;
-    }
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        position: absolute;
-        top: 4%;
-        left: 0;
-        padding: 10px 0;
-        z-index: 99;
-      
-    }
-    .nav-links li a:hover {
-        color: #10100f;
-    }
-    .nav-links li a {
-        color: #fff;
-    }
-    .nav-links li {
-        margin: 5px 0;
-        margin-left: 15px;
-       
-    }
-    .hamburger {
-        display: flex;
-        padding: 10px;
-    }
-    .book-table {
-        display: none;
-    }
-    .nav-links.active {
-        display: flex;
-    }
-    .text-hero-section h2 {
-        text-align: center;
-        font-size: 3rem;
-        margin-top: 10%;
-        
-    }
 
-    /* .nav-links {
-        width: 100%;
-        display: none;
-    } */
+
+
     .foods-section {
         height: 100%;
     }
@@ -388,15 +294,7 @@ footer {
         align-items: center;
        
     }
-    .buttom-img-texts {
-        width: 20rem;
-        height: 28rem;
-         border: 0.5px solid lightgray;
-         border-radius: 6px;
-        
-     }
 }
-
 .Order-apps {
     height: 60vh;
     background-color: #888;
@@ -446,42 +344,11 @@ footer {
     font-weight: 500;
     margin: 7px;
     margin-top: 2rem;
-    
-}
-.Order-apps {
-    width: 100%;
-    height: 100%;
-   
- }
-/* .footer-container {
-    display: block;
-    text-align: center;
 }
 
-.footer-section {
-    width: 100%;
-}
 
-.instagram-gallery {
-    justify-content: center;
-}
 
-.instagram-gallery img {
-    width: 60px;
-    height: 60px;
-}
 
-.social-icons {
-    margin: 20px 0;
-}
-
-.social-icons a {
-    margin-right: 15px;
-}
-
-.footer-bottom {
-    margin-top: 30px;
-} */
 .apps {
     color: rgb(92, 253, 92);
 }
@@ -510,12 +377,13 @@ footer {
         grid-template-rows: repeat(2, 1fr);
         justify-content: center;
         align-items: center;
-       
     }
-   
-
 } */
 /* Mobile Menus */
+@media(max-width: 768px) {
+
+}
+
 @media(max-width: 767px) {
 
     header {
@@ -589,7 +457,6 @@ footer {
     .text-hero-section h2 {
         text-align: center;
         font-size: 3rem;
-        margin-top: 24%;
         
     }
     .top-links a {
@@ -602,7 +469,6 @@ footer {
        border-radius: 50px;
        font-weight: 500;
     }
-    
     .top-links {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -611,12 +477,9 @@ footer {
         align-items: center;
        
     }
-
     .text-hero-section p {
         font-size: 1rem;
     }
-
-
     .foods-section {
         width: 100%;
         height: 100%;
@@ -636,14 +499,12 @@ footer {
      .Order-apps {
         width: 100%;
         height: 100%;
-       
      }
      .top-apss, .center-apps, .last-apps {
         padding-top: 2rem;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(1, 1fr);
-        margin-bottom: 6%;
      }
      .btn-top-apps  {
         padding: 5px 20px;
@@ -665,35 +526,6 @@ footer {
         border-radius: 5px;
         font-weight: 500;
         
-    }
-    .footer-container {
-        display: block;
-        text-align: center;
-    }
-
-    .footer-section {
-        width: 100%;
-    }
-
-    .instagram-gallery {
-        justify-content: center;
-    }
-
-    .instagram-gallery img {
-        width: 60px;
-        height: 60px;
-    }
-
-    .social-icons {
-        margin: 20px 0;
-    }
-
-    .social-icons a {
-        margin-right: 15px;
-    }
-
-    .footer-bottom {
-        margin-top: 30px;
     }
    
    
