@@ -12,8 +12,8 @@ This Project Developed
 
 # Website Sections
 - Home: Contain More sections like Articles and more features
-- About: Contain testimonials Costomers
-- Menu: contian Foods and Drinks
+- About:  contian Foods and Drinks
+- Menu: Contain testimonials Costomers
 - Pages: contain more sections Our Blog
 - Contact: this page Contant of Restaurant like email, phone, locations
 
