@@ -24,6 +24,5 @@ This Project Developed
 
 # Tech Used
 Front-end: **HTML5 CSS3 & JS**
-Design: Figma 
-Collabaration: github
+
 
