@@ -767,8 +767,8 @@ footer {
 
 @media screen and (max-width: 768px) {
     .services {
-        flex-direction: column; /* Stack the service cards vertically */
-        align-items: center;    /* Center them horizontally */
+        flex-direction: column; 
+        align-items: center;    
     }
     
     .image-grid {
