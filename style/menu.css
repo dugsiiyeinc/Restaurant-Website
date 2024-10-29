@@ -4,7 +4,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 /* Global Styles */
 body {
     font-family: "Poppins", sans-serif;
@@ -12,7 +11,6 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
-
 img {
     width: 100%;
     height: 100%;
@@ -20,6 +18,12 @@ img {
 video {
     width: 100%;
     height: 100%;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 111;
 }
 
 /* Top Bar Styling */
@@ -115,9 +119,6 @@ video {
 .book-btn:hover {
     background-color: #555;
 }
-
-
-
 /* Hero section */
 .Container {
     width: min(90%, 1120px);
@@ -125,9 +126,7 @@ video {
 }
 .hero-section {
     margin-top: 5rem;
-
 }
-
 .text-hero-section {
     display: flex;
     flex-direction: column;
@@ -145,15 +144,11 @@ video {
     text-align: center;
     font-weight: 300;
 }
-
-
-
 /* foods-section */
 .foods-section {
     height: 100vh;
     margin-bottom: 10%;
 }
-
 .top-links {
     display: flex;
     flex-wrap: wrap;
@@ -170,12 +165,10 @@ video {
    border-radius: 50px;
    font-weight: 500;
 }
-
 .first-linking  {
     background-color: brown;
     color: #fff !important;
 }
-
 .buttom-details {
     padding: 10px;
 }
@@ -185,7 +178,6 @@ video {
     gap: 20px;
     flex-wrap: wrap;
 }
-
 .buttom-img-texts {
    width: 21rem;
    height: 28rem;
@@ -199,14 +191,12 @@ video {
  padding: 10px;
  height: 15rem;
 } */
-
 .buttom_1 img {
     border-radius: 5px 5px 0 0;
 }
 .buttom_1 video {
     border-radius: 5px 5px 0 0;
 }
-
 .text-buttoms {
     display: flex;
     flex-direction: column;
@@ -316,23 +306,33 @@ footer {
 
 /* Tablet Menu */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+    
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 111;
+    }
 
     .logo img {
         width: 82px;
     }
+
     .logo span {
         margin-top: 5px;
         font-size: 26px;
     }
+
     .top-bar {
         display: none;
     }
+
     .navbar {
         height: 51px; 
         flex-direction: row;
         justify-content: space-between;
         padding: 10px 0px;
     }
+
     .nav-links {
         display: none;
         flex-direction: column;
@@ -344,28 +344,36 @@ footer {
         padding: 10px 0;
         z-index: 99;
     }
+
     .nav-links li a:hover {
         color: #10100f;
     }
+
     .nav-links li {
         margin: 5px 0;
         margin-left: 15px;
     }
+
     .hamburger {
         display: flex;
         padding: 10px;
     }
+
     .book-table {
         display: none;
     }
-    .nav-links.active {
-        display: flex;
-    }
+}
 
-    /* .nav-links {
-        width: 100%;
-        display: none;
-    } */
+.buttom-img-texts {
+    width: 20rem;
+    height: 28rem;
+     border: 0.5px solid lightgray;
+     border-radius: 6px;
+ }
+
+.nav-links.active {
+    display: flex;
+}
     .foods-section {
         height: 100%;
     }
@@ -377,17 +385,9 @@ footer {
         align-items: center;
        
     }
-    .buttom-img-texts {
-        width: 20rem;
-        height: 28rem;
-         border: 0.5px solid lightgray;
-         border-radius: 6px;
-        
-     }
-}
 
 .Order-apps {
-    height: 60vh;
+    height: 100%;
     background-color: #888;
 }
 .apps-test {
@@ -435,81 +435,26 @@ footer {
     font-weight: 500;
     margin: 7px;
     margin-top: 2rem;
-    
-}
-.Order-apps {
-    width: 100%;
-    height: 100%;
-   
- }
-/* .footer-container {
-    display: block;
-    text-align: center;
 }
 
+.footer-container {
+    width: 100%;
+}
 .footer-section {
-    width: 100%;
+    display: none;
 }
-
-.instagram-gallery {
-    justify-content: center;
-}
-
-.instagram-gallery img {
-    width: 60px;
-    height: 60px;
-}
-
-.social-icons {
-    margin: 20px 0;
-}
-
-.social-icons a {
-    margin-right: 15px;
-}
-
-.footer-bottom {
-    margin-top: 30px;
-} */
 .apps {
     color: rgb(92, 253, 92);
 }
-/* @media(max-width: ) {
-    .navbar {
-        width: 100%;
-    }
-    .hero-section {
-        height: 100%;
-    }
-    .text-hero-section h2 {
-        font-size: 3rem;
-    }
-    .foods-section {
-        width: 100%;
-        height: 100%;
-        
-    }
-    .buttoms-sections {
-        height: 100%;
-        margin-bottom: 10rem;
-    }
-    .top-links {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        justify-content: center;
-        align-items: center;
-       
-    }
-   
 
-} */
 /* Mobile Menus */
+
 @media(max-width: 767px) {
 
     header {
         width: 100%;
-        
+        position: sticky;
+        top: 0;
     }
     .hamburger {
         display: flex;
@@ -524,6 +469,43 @@ footer {
     }
     .top-bar {
         width: 100%;
+    }
+    .navbar {
+        height: 51px; 
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 0px;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding: 10px 0;
+        z-index: 99;
+    }
+    .nav-links li a:hover {
+        color: #10100f;
+    }
+    .nav-links li a {
+        color: #fff;
+    }
+    .nav-links li {
+        margin: 5px 0;
+        margin-left: 15px;
+    }
+    .hamburger {
+        display: flex;
+        padding: 10px;
+    }
+    /* .book-table {
+        display: none;
+    } */
+    .nav-links.active {
+        display: flex;
     }
 
     /* .nav-links {
@@ -552,7 +534,6 @@ footer {
        border-radius: 50px;
        font-weight: 500;
     }
-    
     .top-links {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -561,12 +542,9 @@ footer {
         align-items: center;
        
     }
-
     .text-hero-section p {
         font-size: 1rem;
     }
-
-
     .foods-section {
         width: 100%;
         height: 100%;
@@ -586,14 +564,12 @@ footer {
      .Order-apps {
         width: 100%;
         height: 100%;
-       
      }
      .top-apss, .center-apps, .last-apps {
         padding-top: 2rem;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(1, 1fr);
-        margin-bottom: 6%;
      }
      .btn-top-apps  {
         padding: 5px 20px;
@@ -615,35 +591,6 @@ footer {
         border-radius: 5px;
         font-weight: 500;
         
-    }
-    .footer-container {
-        display: block;
-        text-align: center;
-    }
-
-    .footer-section {
-        width: 100%;
-    }
-
-    .instagram-gallery {
-        justify-content: center;
-    }
-
-    .instagram-gallery img {
-        width: 60px;
-        height: 60px;
-    }
-
-    .social-icons {
-        margin: 20px 0;
-    }
-
-    .social-icons a {
-        margin-right: 15px;
-    }
-
-    .footer-bottom {
-        margin-top: 30px;
     }
    
    
