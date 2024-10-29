@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     padding: 0;
@@ -12,6 +11,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 img {
@@ -129,6 +129,10 @@ video {
 .blog-section {
     text-align: center;
     padding: 40px 20px;
+        max-width: 100%;
+    
+    
+  
    
 }
 
@@ -172,19 +176,29 @@ video {
 /* Responsive Design for smaller screens */
 @media (max-width: 1200px) {
     .blog-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        position: sticky;
+        
     }
 }
 
 @media (max-width: 900px) {
     .blog-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
     }
 }
 
 @media (max-width: 600px) {
     .blog-grid {
         grid-template-columns: 1fr;
+        width: 100%;
+        height: 100%;
+        
+      
     }
 }
 /* Responsive adjustments */
@@ -198,7 +212,9 @@ video {
     }
 
     .blog-card img {
-        height: 120px;
+        width: 100%;
+        height: 100%;
+       
     }
 }
 
@@ -207,8 +223,9 @@ video {
     display: grid;
     grid-template-columns: repeat(auto-fiil, minmax(250px, 1fr)); /* 4 columns oo responsive ah */
     gap: 20px;
-    max-width: 1200px;
+    max-width: 1100px;
     padding: 20px;
+    height: 100%;
 }
 
 .blog-card {
@@ -224,6 +241,8 @@ video {
     height: 16rem;
     border: 0.5px solid lightgray;
     border-radius: 6px;
+    
+    
 
     object-fit: cover; /* Sawirka buuxi kartoonka isagoo aan qalloocin */
 }
@@ -339,26 +358,18 @@ footer {
 
 
 
-@media screen and (max-width: 767px) { 
-    header {
-        width: 100%;
-        position: sticky;
-        top: 0;
-        z-index: 111;
+/* Tablet Menu */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .logo img {
+        width: 82px;
     }
-    .hamburger {
-        display: flex;
-        padding: 10px;
-    }
-    .nav-links {
-        width: 100%;
-        display: none;
+    .logo span {
+        margin-top: 5px;
+        font-size: 26px;
     }
     .top-bar {
         display: none;
-    }
-    .top-bar {
-        width: 100%;
     }
     .navbar {
         height: 51px; 
@@ -366,165 +377,6 @@ footer {
         justify-content: space-between;
         padding: 10px 0px;
     }
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        position: absolute;
-        top: 100%;
-        left: 0;
-        padding: 10px 0;
-        z-index: 1111;
-    }
-    .nav-links li a:hover {
-        color: #10100f;
-    }
-    .nav-links li a {
-        color: #fff;
-    }
-    .nav-links li {
-        margin: 5px 0;
-        margin-left: 15px;
-    }
-    .hamburger {
-        display: flex;
-        padding: 10px;
-    }
-    /* .book-table {
-        display: none;
-    } */
-    .nav-links.active {
-        display: flex;
-    }
-
-  
-    .book-table {
-        display: none;
-    }
-
-
-    .blog-section {
-        width: 95%;
-        height: 100%;
-        margin: auto;
-        border-radius: 15px;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-     
-    }
-    .blog-card img {
-        width: 23.25rem;
-        height: 21.25rem;
-        border-radius: 8px;
-        display: flex;
-        flex-wrap: wrap;
-    }
-   
-
-    .footer-container {
-        display: block;
-        text-align: center;
-    }
-
-    .footer-section {
-        width: 100%;
-    }
-
-    .instagram-gallery {
-        justify-content: center;
-    }
-
-    .instagram-gallery img {
-        width: 60px;
-        height: 60px;
-    }
-
-    .social-icons {
-        margin: 20px 0;
-    }
-
-    .social-icons a {
-        margin-right: 15px;
-    }
-
-    .footer-bottom {
-        margin-top: 30px;
-    }
-}
-
-
-@media screen and (max-width: 768px) {
-    .footer-container {
-        display: block;
-        text-align: center;
-    }
-
-    .footer-section {
-        width: 100%;
-    }
-
-    .instagram-gallery {
-        justify-content: center;
-    }
-
-    .instagram-gallery img {
-        width: 60px;
-        height: 60px;
-    }
-
-    .social-icons {
-        margin: 20px 0;
-    }
-
-    .social-icons a {
-        margin-right: 15px;
-    }
-
-    .footer-bottom {
-        margin-top: 30px;
-    }
-    .blog-grid {
-        grid-template-columns: 1fr;
-    }
-   
-    .blog-grid{
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    
-    .blog-card{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .blog-grid {
-        width: 100%;
-        margin-bottom: 20px;
-        margin-right: -100px;
-    }
-
-   
-
-    .image-container {
-        background-image: none;
-    }
-
-    .content {
-        padding: 30px;
-    }
-
-    .top-bar {
-        display: none;
-    }
-
-    .navbar {
-        height: 51px; 
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 10px 0px;
-    }
-
     .nav-links {
         display: none;
         flex-direction: column;
@@ -536,31 +388,109 @@ footer {
         padding: 10px 0;
         z-index: 99;
     }
-
     .nav-links li a:hover {
         color: #10100f;
     }
-
     .nav-links li {
         margin: 5px 0;
         margin-left: 15px;
     }
-
     .hamburger {
         display: flex;
         padding: 10px;
     }
-
     .book-table {
         display: none;
     }
+    .nav-links.active {
+        display: flex;
+    }
+
+    /* .nav-links {
+        width: 100%;
+        display: none;
+    } */
+    .foods-section {
+        height: 100%;
+    }
+    .blog-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        padding-top: 10rem;
+    }
+   
 }
 
-.nav-links.active {
-    display: flex;
+
+
+/* Mobile Menus */
+@media(max-width: 767px) {
+
+    header {
+        width: 100%;
+        
+    }
+    .hamburger {
+        display: flex;
+        padding: 10px;
+    }
+    .nav-links {
+        width: 100%;
+        display: none;
+    }
+    .top-bar {
+        display: none;
+    }
+    .top-bar {
+        width: 100%;
+    }
+
+    /* .nav-links {
+      
+    } */
+    .book-table {
+        display: none;
+    }
+
+   
+    
+   
+    .foods-section {
+        width: 100%;
+        height: 100%;
+    }   
+    .footer-container {
+        display: block;
+        text-align: center;
+    }
+
+    .footer-section {
+        width: 100%;
+    }
+
+    .instagram-gallery {
+        justify-content: center;
+    }
+
+    .instagram-gallery img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .social-icons {
+        margin: 20px 0;
+    }
+
+    .social-icons a {
+        margin-right: 15px;
+    }
+
+    .footer-bottom {
+        margin-top: 30px;
+    }
+   
+   
 }
-
-
-
-
-
