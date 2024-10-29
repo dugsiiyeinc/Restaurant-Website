@@ -10,16 +10,14 @@ body, html {
 }
 
 header {
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 100;
     height: 40px; 
 }
-header .sticky {
-    background-color: orange; 
-}
+
 
 .top-bar {
     background-color: rgba(0, 0, 0, 0.5);
@@ -114,6 +112,7 @@ header .sticky {
 
 .image-container {
     position: relative;
+    
     width: 100%;
     height: 100vh;
     background-image: url('images/background.png');
@@ -201,6 +200,7 @@ header .sticky {
 }
 
 .menu-section h2 {
+    color: #a52a2a;
     font-size: 2.5em;
     margin-bottom: 40px;
 }
@@ -222,6 +222,10 @@ header .sticky {
     text-align: center;
     width: 23%;
     transition: box-shadow 0.3s ease;
+}
+.menu-card h3 {
+   color: #000000;
+    
 }
 
 .menu-card:hover {
@@ -301,25 +305,31 @@ header .sticky {
 
 .text-side {
     width: 45%;
-    padding-left: 20px;
+    
 }
 
+
 .text-side h2 {
+    padding-left: 40px;
     font-size: 2.5em;
     margin-bottom: 20px;
     color: #333;
 }
 
 .text-side p {
+    padding-left: 40px;
     font-size: 1.1em;
     color: #666;
     margin-bottom: 20px;
     line-height: 1.6;
 }
+.button {
+    text-align: center; 
+    margin-top: 20px;}
+
 
 .more-info-btn {
     
-    display: inline-block;
     padding: 10px 20px;
     border: 1px solid #333;
     color: #333;
@@ -330,55 +340,69 @@ header .sticky {
 }
 
 .more-info-btn:hover {
+    
     background-color: #333;
     color: #fff;
 }
 .services-container {
-    text-align: center; /* Center text for the header */
-    margin: 20px 0; /* Margin for spacing */
+    
+    margin: 40px 0; 
     margin-top: 100px;
 }
 
+
 .services {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
-    gap: 20px; /* Space between cards */
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 .service-card {
-    background-color: #f9f9f9; /* Light background for cards */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    padding: 15px; /* Inner padding */
-    transition: transform 0.3s; /* Animation for hover effect */
+    background-color: #f9f9f9; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    padding: 15px; 
+    transition: transform 0.3s; 
+}
+.service-card h3 {
+    color: #a52a2a; 
+    font-size: 24px;
+    margin-bottom: 15px;
 }
 
 .service-card img {
-    width: 100%; /* Make images responsive */
-    border-radius: 10px 10px 0 0; /* Rounded top corners */
+    width: 100%; 
+    border-radius: 10px 10px 0 0; 
 }
 
 .service-card h3 {
-    font-size: 1.5em; /* Title size */
-    margin: 10px 0; /* Margin for spacing */
+    
+    
+    font-size: 1.5em; 
+    margin: 10px 0; 
+
 }
 
+
 .service-card p {
-    font-size: 0.9em; /* Description size */
-    color: #666; /* Description color */
+    font-size: 0.9em; 
+    color: #666; 
 }
 
 .service-card:hover {
-    transform: translateY(-5px); /* Lift effect on hover */
+    transform: translateY(-5px); 
 }
 .services-container h2 {
-    font-size: 2.5em; /* Larger font size for emphasis */
-    color: #333; /* Dark gray color for better contrast */
-    margin-bottom: 20px; /* Space below the heading */
-    font-weight: bold; /* Make the font bold */
-    text-align: center; /* Center the heading */
-    text-transform: uppercase; /* Uppercase letters for a modern look */
-    letter-spacing: 1px; /* Slight spacing between letters */
+    font-size: 2em; 
+    color: #333; 
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
 }
 .food-delivery-container {
     display: flex;
@@ -405,6 +429,7 @@ header .sticky {
 }
 
 .image-item:nth-child(2) {
+    
     grid-area: image2;
     
 }
@@ -412,6 +437,7 @@ header .sticky {
 .image-item:nth-child(3) {
     grid-area: image3;
 }
+
 
 .image-item img {
     width: 100%;
@@ -428,6 +454,7 @@ header .sticky {
 
 .delivery-info h1 {
     font-size: 2.5em;
+    color: #a52a2a;
 }
 
 .delivery-info p {
@@ -446,6 +473,7 @@ header .sticky {
     margin: 10px 0;
     display: flex;
     align-items: center;
+    color: #555;
 }
 
 .delivery-info ul li::before {
@@ -453,14 +481,14 @@ header .sticky {
     display: inline-block;
     width: 40px;
     height: 40px;
-    background-color: rgb(255, 77, 0); /* Set background color to orange */
+    
     border-radius: 50%; /* Make the background circular */
     margin-right: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.5em;
-    color: white;
+   
 }
 
 .delivery-info ul li:nth-child(1)::before {
@@ -474,7 +502,7 @@ header .sticky {
 .delivery-info ul li:nth-child(3)::before {
     content: "📱";
 }
-/* Base styling for the testimonial section */
+
 .testimonials {
     text-align: center;
     padding: 50px 0;
@@ -506,7 +534,7 @@ header .sticky {
 }
 
 .testimonial h3 {
-    color: #D9534F; /* Highlighted color for the title */
+    color: #D9534F; 
     font-size: 1.5em;
     margin-bottom: 15px;
 }
@@ -551,12 +579,12 @@ header .sticky {
 .blog-section h2 {
     display: flex;
     font-size: 2.5em;
-    margin-bottom: 8%; /* Adjusted for clarity */
+    margin-bottom: 8%; 
     color: #333;
 }
 
 .read-all {
-    margin-bottom: 8%; /* Adjusted for clarity */
+    margin-bottom: 8%; 
     padding: 10px 20px;
     background-color: #D9534F;
     color: white;
@@ -603,7 +631,7 @@ header .sticky {
 }
 
 .blog-content h3 {
-    font-size: 1.3em;
+    font-size: 0.8em;
     color: #333;
     margin-bottom: 10px;
 }
@@ -654,7 +682,7 @@ footer {
 
 .footer-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
 }
 
@@ -729,7 +757,7 @@ footer {
     border-top: 1px solid #444;
     padding-top: 20px;
 }
-
+ 
 
 
 /* Responsive design for smaller screens */
@@ -738,6 +766,39 @@ footer {
 
 
 @media screen and (max-width: 768px) {
+    .services {
+        flex-direction: column; /* Stack the service cards vertically */
+        align-items: center;    /* Center them horizontally */
+    }
+    
+    .image-grid {
+        padding: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+            "image1"
+            "image2"
+            "image3";
+    }
+
+    .food-delivery-container {
+        padding: 60px;
+    }
+    .blog-grid {
+        margin: 10px;
+        grid-template-columns: repeat(1, 1fr); /* 1 column on smaller screens */
+    }
+
+    .blog-item.big {
+        grid-column: span 1; /* Full width for large items on smaller screens */
+        grid-row: span 1;
+    }
+
+    .blog-section h2 {
+        
+        font-size: 2em; /* Smaller heading for medium screens */
+    }
+    
     .footer-container {
         display: block;
         text-align: center;
@@ -824,43 +885,44 @@ footer {
     }
 
     .text-side {
-        padding-left: 0;
+        padding-left: 0px;
         margin-top: 20px;
     }
+    
     .visit-us-card {
-        position: static; /* Remain inline */
-        width: 90%; /* Full width on mobile */
-        margin-top: 20px; /* Space below the image */
-        margin-left: 20px; /* Shift content slightly to the right on mobile */
-        padding: 20px; /* Add padding for better spacing */
-        box-sizing: border-box; /* Ensure padding doesn't overflow the card width */
+        position: static; 
+        width: 90%; 
+        margin-top: 0px; 
+        margin-left: 20px; 
+        padding: 50px; 
+        box-sizing: border-box; 
     }
     
 
     .visit-us-card h3 {
-        font-size: 1.2em; /* Adjust font size for mobile */
+        font-size: 1.2em; 
     }
 
     .visit-us-card p {
-        font-size: 0.9em; /* Slightly smaller text */
+        font-size: 0.9em; 
     }
 
     .text-side h2 {
         margin: 10px;
-        font-size: 2em; /* Slightly smaller heading */
-        padding: 10px 0; /* Adds padding at the top and bottom */
-    }
+        font-size: 2em; 
+        padding: 10px 0; }
     .text-side p {
         margin: 10px;
-        font-size: 1em; /* Adjust the size of the paragraph text */
-        padding: 10px 0; /* Adds padding at the top and bottom */
-        line-height: 1.5; /* Increases line spacing for better readability */
+        font-size: 1em; 
+        padding: 10px 0; 
+        line-height: 1.5; 
     }
     .button-container {
+        padding-left: 40px;
         display: flex;
-        justify-content: center; /* Centers the button horizontally */
-        width: 100%; /* Ensures full width of the container */
-        margin-top: 20px; /* Optional: Add spacing from the content above */
+        justify-content: center; 
+        width: 100%; 
+        margin-top: 20px; 
     }
 
     .more-info-btn {
@@ -888,6 +950,7 @@ footer {
     }
 
     .menu-section h2 {
+        
         font-size: 2em;
     }
     .mobile-video {
