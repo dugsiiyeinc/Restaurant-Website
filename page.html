@@ -54,62 +54,72 @@
                 <!-- Blog Cards -->
                 <!-- Each blog card represents a single article -->
                 <div class="blog-card">
-                    <img src="images/12.png" alt="Delicious gluten free sushi">
+                    <!-- HTML -->
+<img src="images/12.png" alt="Delicious gluten free sushi" onclick="scrollToTop()">
+
                     <p>January 3, 2023</p>
                     <h3>How to prepare a delicious gluten free sushi</h3>
                 </div>
                 <div class="blog-card">
-                    <img src="images/16.png" alt="Baking lessons">
+                   <!-- HTML -->
+<img src="images/16.png" alt="Delicious gluten free sushi" onclick="scrollToTop()">
+
                     <p>January 3, 2023</p>
                     <h3>Exclusive baking lessons from the pastry king</h3>
                 </div>
                 <div class="blog-card">
-                    <img src="images/12.png" alt="Perfect fries">
+                   <!-- HTML -->
+<img src="images/image.png" alt="Delicious gluten free sushi" onclick="scrollToTop()">
+
                     <p>January 3, 2023</p>
                     <h3>How to prepare the perfect fries in an air fryer</h3>
                 </div>
                 <div class="blog-card">
-                    <img src="images/basto.jpg" alt="Chicken tenders">
+                   <!-- HTML -->
+<img src="images/1i.png" alt="Delicious gluten free sushi" onclick="scrollToTop()">
+
                     <p>January 3, 2023</p>
                     <h3>How to prepare delicious chicken tenders</h3>
                 </div>
                 <div class="blog-card">
-                    <img src="images/cuno.jpg" alt="Cooking gadgets">
+                   <!-- HTML -->
+<img src="images/basto.jpg" alt="Delicious gluten free sushi" onclick="scrollToTop()">
+
                     <p>January 3, 2023</p>
                     <h3>5 great cooking gadgets you can buy to save time</h3>
                 </div>
                 <div class="blog-card">
-                    <img src="images/download.jpg" alt="Burger tips">
+                    <img src="images/images.jpg" alt="Burger tips onclick="scrollToTop>
                     <p>January 3, 2023</p>
                     <h3>The secret tips & tricks to prepare a perfect burger</h3>
                 </div>
                 <div class="blog-card">
-                    <img src="images/15.png" alt="Cheesecake recipes">
+                  <img src="images/14.png" alt="Delicious gluten free sushi" onclick="scrollToTop()">
                     <p>January 3, 2023</p>
                     <h3>7 delicious cheesecake recipes you can prepare</h3>
                 </div>
                 <div class="blog-card">
-                    <img src="images/14.png" alt="Pizza restaurants">
+                  <img src="images/download.jpg" alt="Delicious gluten free sushi" onclick="scrollToTop()">
                     <p>January 3, 2023</p>
                     <h3>5 great pizza restaurants you should visit this city</h3>
                 </div>
                 <div class="blog-card">
-                    <img src="images/13.png" alt="Cooking gadgets repeat">
+                  <img src="images/raashin.jpg" alt="Delicious gluten free sushi" onclick="scrollToTop()">
                     <p>January 3, 2023</p>
                     <h3>5 great cooking gadgets you can buy to save time</h3>
                 </div>
                 <div class="blog-card">
-                    <img src="images/raashin.jpg" alt="Gluten free sushi repeat">
+                  <img src="images/15.png" alt="Delicious gluten free sushi" onclick="scrollToTop()">
                     <p>January 3, 2023</p>
                     <h3>How to prepare a delicious gluten free sushi</h3>
                 </div>
                 <div class="blog-card">
-                    <img src="images/14.png" alt="Kids desserts">
+                  <img src="images/cuno.jpg" alt="Delicious gluten free sushi" onclick="scrollToTop()">
                     <p>January 3, 2023</p>
                     <h3>Top 20 simple and quick desserts for kids</h3>
                 </div>
                 <div class="blog-card">
-                    <img src="images/16.png" alt="Kids desserts repeat">
+                  <img src="images/13.png" alt="Delicious gluten free sushi" onclick="scrollToTop()">
                     <p>January 3, 2023</p>
                     <h3>Top 20 simple and quick desserts for kids</h3>
                 </div>
@@ -170,5 +180,21 @@
           <p>&copy; 2024 Maalin Coffee. All Rights Reserved.</p>
         </div>
       </footer>
+      <script>
+        document.querySelectorAll('.blog-card img').forEach(img => {
+            img.addEventListener('click', () => {
+                // Toggle class to change image style
+                img.classList.toggle('image-active');
+                
+                // Scroll to the header when the image is clicked
+                const header = document.querySelector('header'); // change this selector if your header has a specific class or id
+                if (header) {
+                    header.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+    
+    
 </body>
 </html>
