@@ -779,6 +779,7 @@ footer {
             "image1"
             "image2"
             "image3";
+
     }
 
     .food-delivery-container {
@@ -1031,5 +1032,10 @@ footer {
 .nav-links.active {
     display: flex;
 }
+
+
+
+
+
 
 
