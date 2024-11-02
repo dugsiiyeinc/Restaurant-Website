@@ -1,325 +1,385 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maalin Coffee</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap">
-</head>
-<body>
-
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap"
+    />
+  </head>
+  <body>
     <header>
-        <div class="top-bar">
-            <div class="contact-info">
-                <span><i class="fas fa-phone"></i> (061) 224- 5582</span>
-                <span><i class="fas fa-envelope"></i> maalincoffee@gmail.com</span>
-            </div>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
-            </div>
+      <div class="top-bar">
+        <div class="contact-info">
+          <span><i class="fas fa-phone"></i> (061) 224- 5582</span>
+          <span><i class="fas fa-envelope"></i> maalincoffee@gmail.com</span>
         </div>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
 
-        <nav class="navbar">
-            <div class="logo">
-                <img src="images/logoc.png" alt="Maalin Coffee logo">
-                <span>Maalin Coffee</span>
-            </div>
-            <div class="hamburger" id="hamburger">
-                <i class="fas fa-bars"></i>
-            </div>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="http://127.0.0.1:5500/Home.html">Home</a></li>
-                <li><a href="http://127.0.0.1:5500/about.html">About</a></li>
-                <li><a href="http://127.0.0.1:5500/menu.html">Menu</a></li>
-                <li><a href="#">Pages</a></li>
-                <li><a href="http://127.0.0.1:5500/contact.html">Contact</a></li>
-            </ul>
-            <div class="book-table">
-                <a href="#" class="book-btn">Book A Table</a>
-            </div>
-        </nav>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="images/logoc.png" alt="Maalin Coffee logo" />
+          <span>Maalin Coffee</span>
+        </div>
+        <div class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="http://127.0.0.1:5500/about.html">About</a></li>
+          <li><a href="http://127.0.0.1:5500/menu.html">Menu</a></li>
+          <li><a href="#">Pages</a></li>
+          <li><a href="http://127.0.0.1:5500/contact.html">Contact</a></li>
+        </ul>
+        <div class="book-table">
+          <a href="#" class="book-btn">Book A Table</a>
+        </div>
+      </nav>
     </header>
 
     <div class="image-container">
-        <!-- Video for mobile devices -->
-        <video autoplay muted loop class="mobile-video">
-            <source src="images/b.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        
-        <!-- Image fallback for desktop and larger screens -->
-        <div class="desktop-image"></div>
+      <!-- Video for mobile devices -->
+      <video autoplay muted loop class="mobile-video">
+        <source src="images/b.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
 
-        <div class="content">
-            
-            <h1>BEST FOOD FOR YOUR TASTE</h1>
-            <p>Discover delectable cuisine and unforgettable moments in our welcoming, culinary haven.</p>
-            <div class="btn-group">
-                <a href="#" class="btn book-btn">Book  Table</a>
-                <a href="#" class="btn explore-btn">Explore Menu</a>
-            </div>
+      <!-- Image fallback for desktop and larger screens -->
+      <div class="desktop-image"></div>
+
+      <div class="content">
+        <h1>BEST FOOD FOR YOUR TASTE</h1>
+        <p>
+          Discover delectable cuisine and unforgettable moments in our
+          welcoming, culinary haven.
+        </p>
+        <div class="btn-group">
+          <a href="#" class="btn book-btn">Book Table</a>
+          <a href="#" class="btn explore-btn">Explore Menu</a>
         </div>
+      </div>
     </div>
     <section class="menu-section">
-        <h2>Browse Our Menu</h2>
-        <div class="menu-container">
-            <div class="menu-card">
-                <div class="icon">
-                    <img src="images/break-removebg-preview.png" alt="Breakfast Icon">
-                </div>
-                <h3>Breakfast</h3>
-                <p>In the new era of technology we look in the future with certainty and pride for our life.</p>
-                <a href="#" class="menu-link">Explore Menu</a>
-            </div>
-
-            <div class="menu-card">
-                <div class="icon">
-                    <img src="images/Main Dishes.png" alt="Main Dishes Icon">
-                </div>
-                <h3>Main Dishes</h3>
-                <p>In the new era of technology we look in the future with certainty and pride for our life.</p>
-                <a href="#" class="menu-link">Explore Menu</a>
-            </div>
-
-            <div class="menu-card">
-                <div class="icon">
-                    <img src="images/Drinks.png" alt="Drinks Icon">
-                </div>
-                <h3>Drinks</h3>
-                <p>In the new era of technology we look in the future with certainty and pride for our life.</p>
-                <a href="#" class="menu-link">Explore Menu</a>
-            </div>
-
-            <div class="menu-card">
-                <div class="icon">
-                    <img src="images/Desserts (1).png" alt="Desserts Icon">
-                </div>
-                <h3>Desserts</h3>
-                <p>In the new era of technology we look in the future with certainty and pride for our life.</p>
-                <a href="#" class="menu-link">Explore Menu</a>
-            </div>
+      <h2>Browse Our Menu</h2>
+      <div class="menu-container">
+        <div class="menu-card">
+          <div class="icon">
+            <img src="images/break-removebg-preview.png" alt="Breakfast Icon" />
+          </div>
+          <h3>Breakfast</h3>
+          <p>
+            In the new era of technology we look in the future with certainty
+            and pride for our life.
+          </p>
+          <a href="#" class="menu-link">Explore Menu</a>
         </div>
+
+        <div class="menu-card">
+          <div class="icon">
+            <img src="images/Main Dishes.png" alt="Main Dishes Icon" />
+          </div>
+          <h3>Main Dishes</h3>
+          <p>
+            In the new era of technology we look in the future with certainty
+            and pride for our life.
+          </p>
+          <a href="#" class="menu-link">Explore Menu</a>
+        </div>
+
+        <div class="menu-card">
+          <div class="icon">
+            <img src="images/Drinks.png" alt="Drinks Icon" />
+          </div>
+          <h3>Drinks</h3>
+          <p>
+            In the new era of technology we look in the future with certainty
+            and pride for our life.
+          </p>
+          <a href="#" class="menu-link">Explore Menu</a>
+        </div>
+
+        <div class="menu-card">
+          <div class="icon">
+            <img src="images/Desserts (1).png" alt="Desserts Icon" />
+          </div>
+          <h3>Desserts</h3>
+          <p>
+            In the new era of technology we look in the future with certainty
+            and pride for our life.
+          </p>
+          <a href="#" class="menu-link">Explore Menu</a>
+        </div>
+      </div>
     </section>
     <section class="healthy-food-section">
-        <div class="container">
-            <div class="image-side">
-                <img src="images/side.jpg" alt="Healthy Food Image">
-                <div class="visit-us-card">
-                    <h3>Come and visit us</h3>
-                    <p><i class="fas fa-phone"></i> (414) 857 – 0107</p>
-                    <p><i class="fas fa-envelope"></i> hasankaafi053@gmail.com</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Mogadisho</p>
-                </div>
-            </div>
-            <div class="text-side">
-                <h2>We provide healthy food for your family.</h2>
-                <p>Our story began with a vision to create a unique dining experience that merges fine dining, exceptional service, and a vibrant ambiance. Rooted in the city’s rich culinary culture, we aim to honor our local roots while infusing a global palate.</p>
-                <p>At place, we believe that dining is not just about food, but also about the overall experience. Our staff, renowned for their warmth and dedication, strives to make every visit an unforgettable event.</p>
-               <div class="button">
-    <a href="#" class="more-info-btn">More About Us</a>
-</div>
-            </div>
+      <div class="container">
+        <div class="image-side">
+          <img src="images/side.jpg" alt="Healthy Food Image" />
+          <div class="visit-us-card">
+            <h3>Come and visit us</h3>
+            <p><i class="fas fa-phone"></i> (414) 857 – 0107</p>
+            <p><i class="fas fa-envelope"></i> happytummy@restaurant.com</p>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> 837 W. Marshall Lane
+              Marshalltown, IA 50158, Los Angeles
+            </p>
+          </div>
         </div>
-    </section>
-    <section>
-        <div class="services-container">
-            <h2>We also offer unique services for your events</h2>
-            <div class="services">
-                <div class="service-card">
-                    <img src="images/2.png" alt="Caterings">
-                    <h3>Caterings</h3>
-                    <p>In the new era of technology we look in the future with certainty for life.</p>
-                </div>
-                <div class="service-card">
-                    <img src="images/2.png" alt="Birthdays">
-                    <h3>Birthdays</h3>
-                    <p>In the new era of technology we look in the future with certainty for life.</p>
-                </div>
-                <div class="service-card">
-                    <img src="images/3.png" alt="Weddings">
-                    <h3>Weddings</h3>
-                    <p>In the new era of technology we look in the future with certainty for life.</p>
-                </div>
-                <div class="service-card">
-                    <img src="images/4.png" alt="Events">
-                    <h3>Events</h3>
-                    <p>In the new era of technology we look in the future with certainty for life.</p>
-                </div>
-            </div>
+        <div class="text-side">
+          <h2>We provide healthy food for your family.</h2>
+          <p>
+            Our story began with a vision to create a unique dining experience
+            that merges fine dining, exceptional service, and a vibrant
+            ambiance. Rooted in the city’s rich culinary culture, we aim to
+            honor our local roots while infusing a global palate.
+          </p>
+          <p>
+            At place, we believe that dining is not just about food, but also
+            about the overall experience. Our staff, renowned for their warmth
+            and dedication, strives to make every visit an unforgettable event.
+          </p>
+          <div class="button-container">
+            <a href="#" class="more-info-btn">More About Us</a>
+          </div>
         </div>
+      </div>
     </section>
-   
-    
+    <div class="services-container">
+      <h2>We also offer unique services for your events</h2>
+      <div class="services">
+        <div class="service-card">
+          <img src="images/2.png" alt="Caterings" />
+          <h3>Caterings</h3>
+          <p>
+            In the new era of technology we look in the future with certainty
+            for life.
+          </p>
+        </div>
+        <div class="service-card">
+          <img src="images/2.png" alt="Birthdays" />
+          <h3>Birthdays</h3>
+          <p>
+            In the new era of technology we look in the future with certainty
+            for life.
+          </p>
+        </div>
+        <div class="service-card">
+          <img src="images/3.png" alt="Weddings" />
+          <h3>Weddings</h3>
+          <p>
+            In the new era of technology we look in the future with certainty
+            for life.
+          </p>
+        </div>
+        <div class="service-card">
+          <img src="images/4.png" alt="Events" />
+          <h3>Events</h3>
+          <p>
+            In the new era of technology we look in the future with certainty
+            for life.
+          </p>
+        </div>
+      </div>
+    </div>
 
     <section class="food-delivery-container">
-        <div class="image-grid">
-            <div class="image-item">
-                <img src="images/1.png" alt="Chef preparing food">
-            </div>
-            <div class="image-item">
-                <img src="images/image.png" alt="Delicious soup">
-            </div>
-            <div class="image-item">
-                <img src="images/image.png" alt="Barbecue platter">
-            </div>
+      <div class="image-grid">
+        <div class="image-item">
+          <img src="images/1.png" alt="Chef preparing food" />
         </div>
-        <div class="delivery-info">
-            <h1>Fastest Food Delivery in City</h1>
-            <p>Our visual designer lets you quickly and easily drag and drop your way to custom apps for both desktop and mobile.</p>
-            <ul>
-                <li> Delivery within 30 minutes</li>
-                <li> Best Offer & Prices</li>
-                <li> Online Services Available</li>
-            </ul>
+        <div class="image-item">
+          <img src="images/image.png" alt="Delicious soup" />
         </div>
-        
+        <div class="image-item">
+          <img src="images/image.png" alt="Barbecue platter" />
+        </div>
+      </div>
+      <div class="delivery-info">
+        <h1>Fastest Food Delivery in City</h1>
+        <p>
+          Our visual designer lets you quickly and easily drag and drop your way
+          to custom apps for both desktop and mobile.
+        </p>
+        <ul>
+          <li>Delivery within 30 minutes</li>
+          <li>Best Offer & Prices</li>
+          <li>Online Services Available</li>
+        </ul>
+      </div>
     </section>
 
     <section class="testimonials">
-        <h2>What Our Customers Say</h2>
-        <div class="testimonial-container">
-            <div class="testimonial">
-                <h3>“The best restaurant”</h3>
-                <p>Last night, we dined at the place and were simply blown away. From the moment we stepped in, we were enveloped in an inviting atmosphere and greeted with warm smiles.</p>
-                <div class="customer-info">
-                    <img src="images/profile.jpg" alt="Sophie Robson">
-                    <div>
-                        <h4>phahmo</h4>
-                        <p>Los Angeles, CA</p>
-                    </div>
-                </div>
+      <h2>What Our Customers Say</h2>
+      <div class="testimonial-container">
+        <div class="testimonial">
+          <h3>“The best restaurant”</h3>
+          <p>
+            Last night, we dined at the place and were simply blown away. From
+            the moment we stepped in, we were enveloped in an inviting
+            atmosphere and greeted with warm smiles.
+          </p>
+          <div class="customer-info">
+            <img src="images/profile.jpg" alt="Sophie Robson" />
+            <div>
+              <h4>phahmo</h4>
+              <p>Los Angeles, CA</p>
             </div>
-    
-            <div class="testimonial">
-                <h3>“Simply delicious”</h3>
-                <p>Place exceeded my expectations on all fronts. The ambiance was cozy and relaxed, making it a perfect venue for our anniversary dinner. Each dish was prepared and beautifully presented.</p>
-                <div class="customer-info">
-                    <img src="images/profile.jpg" alt="Matt Cannon">
-                    <div>
-                        <h4>Aniso</h4>
-                        <p>San Diego, CA</p>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="testimonial">
-                <h3>“One of a kind restaurant”</h3>
-                <p>The culinary experience at this place is first to none. The atmosphere is vibrant, the food — nothing short of extraordinary. The food was the highlight of our evening. Highly recomm</p>
-                <div class="customer-info">
-                    <img src="images/profile.jpg" alt="Andy Smith">
-                    <div>
-                        <h4>Aaisho</h4>
-                        <p>San Francisco, CA</p>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+
+        <div class="testimonial">
+          <h3>“Simply delicious”</h3>
+          <p>
+            Place exceeded my expectations on all fronts. The ambiance was cozy
+            and relaxed, making it a perfect venue for our anniversary dinner.
+            Each dish was prepared and beautifully presented.
+          </p>
+          <div class="customer-info">
+            <img src="images/profile.jpg" alt="Matt Cannon" />
+            <div>
+              <h4>Aniso</h4>
+              <p>San Diego, CA</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <h3>“One of a kind restaurant”</h3>
+          <p>
+            The culinary experience at this place is first to none. The
+            atmosphere is vibrant, the food — nothing short of extraordinary.
+            The food was the highlight of our evening. Highly recomm
+          </p>
+          <div class="customer-info">
+            <img src="images/profile.jpg" alt="Andy Smith" />
+            <div>
+              <h4>Aaisho</h4>
+              <p>San Francisco, CA</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="text-section">
-        <h2>Our Blog & Articles</h2>
-        <a href="#" class="read-all">Read All Articles</a>
+      <h2>Our Blog & Articles</h2>
+      <a href="#" class="read-all">Read All Articles</a>
     </section>
 
     <section class="blog-section">
-        <div class="container">
-           
-            <div class="blog-grid">
-                <div class="blog-item big">
-                    <img src="images/12.png" alt="Burger Image">
-                    <div class="blog-content">
-                        <p class="blog-date">January 3, 2023</p>
-                        <h3>The secret tips & tricks to prepare a perfect burger & pizza for our customers</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                    </div>
-                </div>
-                <div class="blog-item small">
-                    <img src="images/15.png" alt="Fries Image">
-                    <div class="blog-content">
-                        <p class="blog-date">January 3, 2023</p>
-                        <h3>How to prepare the perfect french fries in an air fryer</h3>
-                    </div>
-                </div>
-                <div class="blog-item small">
-                    <img src="images/14.png" alt="Chicken Tenders Image">
-                    <div class="blog-content">
-                        <p class="blog-date">January 3, 2023</p>
-                        <h3>How to prepare delicious chicken tenders</h3>
-                    </div>
-                </div>
-                <div class="blog-item small">
-                    <img src="images/14.png" alt="Cheesecake Image">
-                    <div class="blog-content">
-                        <p class="blog-date">January 3, 2023</p>
-                        <h3>7 delicious cheesecake recipes you can prepare</h3>
-                    </div>
-                </div>
-                <div class="blog-item small">
-                    <img src="images/13.png" alt="Pizza Image">
-                    <div class="blog-content">
-                        <p class="blog-date">January 3, 2023</p>
-                        <h3>5 great pizza restaurants you should visit this city</h3>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="blog-grid">
+          <div class="blog-item big">
+            <img src="images/12.png" alt="Burger Image" />
+            <div class="blog-content">
+              <p class="blog-date">January 3, 2023</p>
+              <h3>
+                The secret tips & tricks to prepare a perfect burger & pizza for
+                our customers
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt.
+              </p>
             </div>
+          </div>
+          <div class="blog-item small">
+            <img src="images/15.png" alt="Fries Image" />
+            <div class="blog-content">
+              <p class="blog-date">January 3, 2023</p>
+              <h3>How to prepare the perfect french fries in an air fryer</h3>
+            </div>
+          </div>
+          <div class="blog-item small">
+            <img src="images/14.png" alt="Chicken Tenders Image" />
+            <div class="blog-content">
+              <p class="blog-date">January 3, 2023</p>
+              <h3>How to prepare delicious chicken tenders</h3>
+            </div>
+          </div>
+          <div class="blog-item small">
+            <img src="images/14.png" alt="Cheesecake Image" />
+            <div class="blog-content">
+              <p class="blog-date">January 3, 2023</p>
+              <h3>7 delicious cheesecake recipes you can prepare</h3>
+            </div>
+          </div>
+          <div class="blog-item small">
+            <img src="images/13.png" alt="Pizza Image" />
+            <div class="blog-content">
+              <p class="blog-date">January 3, 2023</p>
+              <h3>5 great pizza restaurants you should visit this city</h3>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <footer>
-        <div class="footer-container">
-            <div class="footer-section logo-section">
-                <h2>Bistro Bliss</h2>
-                <p>In the new era of technology we look in the future with certainty and pride for our company and.</p>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                </div>
-            </div>
-            <div class="footer-section pages-section">
-                <h3>Pages</h3>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Delivery</a></li>
-                </ul>
-            </div>
-            <div class="footer-section utility-section">
-                <h3>Utility Pages</h3>
-                <ul>
-                    <li><a href="#">Start Here</a></li>
-                    <li><a href="#">Styleguide</a></li>
-                    <li><a href="#">Password Protected</a></li>
-                    <li><a href="#">404 Not Found</a></li>
-                    <li><a href="#">Licenses</a></li>
-                    <li><a href="#">Changelog</a></li>
-                    <li><a href="#">View More</a></li>
-                </ul>
-            </div>
-            <div class="footer-section instagram-section">
-                <h3>Follow Us On Instagram</h3>
-                <div class="instagram-gallery">
-                    <img src="images/12.png" alt="Food 1">
-                    <img src="images/13.png" alt="Food 2">
-                    <img src="images/14.png" alt="Food 3">
-                    <img src="images/15.png" alt="Food 4">
-                </div>
-            </div>
+      <div class="footer-container">
+        <div class="footer-section logo-section">
+          <h2>Bistro Bliss</h2>
+          <p>
+            In the new era of technology we look in the future with certainty
+            and pride for our company and.
+          </p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+          </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 Hassan Developer. All Rights Reserved.</p>
+        <div class="footer-section pages-section">
+          <h3>Pages</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Delivery</a></li>
+          </ul>
         </div>
-
+        <div class="footer-section utility-section">
+          <h3>Utility Pages</h3>
+          <ul>
+            <li><a href="#">Start Here</a></li>
+            <li><a href="#">Styleguide</a></li>
+            <li><a href="#">Password Protected</a></li>
+            <li><a href="#">404 Not Found</a></li>
+            <li><a href="#">Licenses</a></li>
+            <li><a href="#">Changelog</a></li>
+            <li><a href="#">View More</a></li>
+          </ul>
+        </div>
+        <div class="footer-section instagram-section">
+          <h3>Follow Us On Instagram</h3>
+          <div class="instagram-gallery">
+            <img src="images/12.png" alt="Food 1" />
+            <img src="images/13.png" alt="Food 2" />
+            <img src="images/14.png" alt="Food 3" />
+            <img src="images/15.png" alt="Food 4" />
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Hassan Developer. All Rights Reserved.</p>
+      </div>
     </footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

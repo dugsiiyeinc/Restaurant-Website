@@ -4,7 +4,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 /* Global Styles */
 body {
     font-family: "Poppins", sans-serif;
@@ -12,7 +11,6 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
-
 img {
     width: 100%;
     height: 100%;
@@ -20,6 +18,12 @@ img {
 video {
     width: 100%;
     height: 100%;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 111;
 }
 
 /* Top Bar Styling */
@@ -44,8 +48,11 @@ video {
 .social-icons a {
     color: white;
     margin-left: 15px;
-    text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+.social-icons a:hover {
+    color: #ddd;
 }
 
 /* Navbar Styling */
@@ -53,8 +60,17 @@ video {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f4f4f4;
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 20px 50px;
+    height: 40%;
+}
+
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: black;
 }
 
 .logo {
@@ -71,6 +87,9 @@ video {
     font-size: 28px;
     font-weight: bold;
     color: #333;
+}
+.logo img {
+    color: #333 !important;
 }
 
 .nav-links {
@@ -106,9 +125,6 @@ video {
 .book-btn:hover {
     background-color: #555;
 }
-
-
-
 /* Hero section */
 .Container {
     width: min(90%, 1120px);
@@ -116,9 +132,7 @@ video {
 }
 .hero-section {
     margin-top: 5rem;
-
 }
-
 .text-hero-section {
     display: flex;
     flex-direction: column;
@@ -136,15 +150,11 @@ video {
     text-align: center;
     font-weight: 300;
 }
-
-
-
 /* foods-section */
 .foods-section {
     height: 100vh;
     margin-bottom: 10%;
 }
-
 .top-links {
     display: flex;
     flex-wrap: wrap;
@@ -161,12 +171,10 @@ video {
    border-radius: 50px;
    font-weight: 500;
 }
-
 .first-linking  {
     background-color: brown;
     color: #fff !important;
 }
-
 .buttom-details {
     padding: 10px;
 }
@@ -176,7 +184,6 @@ video {
     gap: 20px;
     flex-wrap: wrap;
 }
-
 .buttom-img-texts {
    width: 21rem;
    height: 28rem;
@@ -190,14 +197,12 @@ video {
  padding: 10px;
  height: 15rem;
 } */
-
 .buttom_1 img {
     border-radius: 5px 5px 0 0;
 }
 .buttom_1 video {
     border-radius: 5px 5px 0 0;
 }
-
 .text-buttoms {
     display: flex;
     flex-direction: column;
@@ -221,10 +226,161 @@ video {
     text-align: center;
     padding-top: 1rem;
 }
+footer {
+    padding: 40px;
+    background-color: #2e2e2e;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    width: 23%;
+    margin-bottom: 20px;
+}
+
+.logo-section h2 {
+    font-size: 24px;
+}
+
+.logo-section p {
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+.social-icons img, .social-icons i {
+    width: 20px;
+    height: 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: white;
+}
+
+.footer-section ul {
+    list-style: none;
+    color: white;
+}
+
+.footer-section ul li {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.instagram-gallery {
+    display: flex;
+    gap: 10px;
+}
+
+.instagram-gallery img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #bbb;
+}
+
+.footer-bottom p {
+    border-top: 1px solid #444;
+    padding-top: 20px;
+}
+
+
+/* Tablet Menu */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 
+    
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 111;
+    }
 
+    .logo img {
+        width: 82px;
+    }
 
+    .logo span {
+        margin-top: 5px;
+        font-size: 26px;
+    }
+
+    .top-bar {
+        display: none;
+    }
+
+    .navbar {
+        height: 51px; 
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 0px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding: 10px 0;
+        z-index: 99;
+    }
+
+    .nav-links li a:hover {
+        color: #10100f;
+    }
+
+    .nav-links li {
+        margin: 5px 0;
+        margin-left: 15px;
+    }
+
+    .hamburger {
+        display: flex;
+        padding: 10px;
+    }
+
+    .book-table {
+        display: none;
+    }
+}
+
+.buttom-img-texts {
+    width: 20rem;
+    height: 28rem;
+     border: 0.5px solid lightgray;
+     border-radius: 6px;
+ }
+
+.nav-links.active {
+    display: flex;
+}
 
     .foods-section {
         height: 100%;
@@ -237,10 +393,9 @@ video {
         align-items: center;
        
     }
-}
 
 .Order-apps {
-    height: 60vh;
+    height: 100%;
     background-color: #888;
 }
 .apps-test {
@@ -266,7 +421,6 @@ video {
     line-height: 2;
     padding: 10px;
 }
-
 .btn-top-apps  {
     padding: 10px 20px;
     font-size: 1.8rem;
@@ -281,7 +435,6 @@ video {
     font-weight: 500;
     margin: 10px;
     margin-top: 2rem;
-   
 }
 .btn-last-app {
     padding: 10px 20px;
@@ -290,62 +443,83 @@ video {
     font-weight: 500;
     margin: 7px;
     margin-top: 2rem;
-    
 }
 
 
-
+.footer-container {
+    width: 100%;
+}
+.footer-section {
+    display: none;
+}
 
 .apps {
     color: rgb(92, 253, 92);
 }
-/* @media(max-width: ) {
-    .navbar {
-        width: 100%;
-    }
-    .hero-section {
-        height: 100%;
-    }
-    .text-hero-section h2 {
-        font-size: 3rem;
-    }
-    .foods-section {
-        width: 100%;
-        height: 100%;
-        
-    }
-    .buttoms-sections {
-        height: 100%;
-        margin-bottom: 10rem;
-    }
-    .top-links {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        justify-content: center;
-        align-items: center;
-       
-    }
-   
 
-} */
 /* Mobile Menus */
 @media(max-width: 768px) {
 
 }
 
+
 @media(max-width: 767px) {
 
     header {
         width: 100%;
-        
+        position: sticky;
+        top: 0;
+    }
+    .hamburger {
+        display: flex;
+        padding: 10px;
     }
     .nav-links {
         width: 100%;
         display: none;
     }
     .top-bar {
+        display: none;
+    }
+    .top-bar {
         width: 100%;
+    }
+    .navbar {
+        height: 51px; 
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 0px;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding: 10px 0;
+        z-index: 99;
+    }
+    .nav-links li a:hover {
+        color: #10100f;
+    }
+    .nav-links li a {
+        color: #fff;
+    }
+    .nav-links li {
+        margin: 5px 0;
+        margin-left: 15px;
+    }
+    .hamburger {
+        display: flex;
+        padding: 10px;
+    }
+    /* .book-table {
+        display: none;
+    } */
+    .nav-links.active {
+        display: flex;
     }
 
     /* .nav-links {
@@ -365,7 +539,6 @@ video {
         
     }
     .top-links a {
-        
         font-size: 0.8rem;
         margin: 2rem;
        text-decoration: none;
@@ -375,7 +548,6 @@ video {
        border-radius: 50px;
        font-weight: 500;
     }
-    
     .top-links {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -384,12 +556,9 @@ video {
         align-items: center;
        
     }
-
     .text-hero-section p {
         font-size: 1rem;
     }
-
-
     .foods-section {
         width: 100%;
         height: 100%;
@@ -399,7 +568,6 @@ video {
         height: 100%;
     }
     .buttom-img-texts {
-       
         width: 22rem;
         height: 28rem;
          border: 0.5px solid lightgray;
