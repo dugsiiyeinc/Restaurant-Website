@@ -48,8 +48,11 @@ header {
 .social-icons a {
     color: white;
     margin-left: 15px;
-    text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+.social-icons a:hover {
+    color: #ddd;
 }
 
 /* Navbar Styling */
@@ -57,9 +60,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f4f4f4;
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 20px 50px;
+    height: 40%;
 }
+
 
 .hamburger {
     display: none;
@@ -67,6 +72,7 @@ header {
     font-size: 1.5em;
     color: black;
 }
+
 .logo {
     display: flex;
     align-items: center;
@@ -306,6 +312,7 @@ footer {
 
 /* Tablet Menu */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+
     
     header {
         position: sticky;
@@ -374,6 +381,7 @@ footer {
 .nav-links.active {
     display: flex;
 }
+
     .foods-section {
         height: 100%;
     }
@@ -437,17 +445,23 @@ footer {
     margin-top: 2rem;
 }
 
+
 .footer-container {
     width: 100%;
 }
 .footer-section {
     display: none;
 }
+
 .apps {
     color: rgb(92, 253, 92);
 }
 
 /* Mobile Menus */
+@media(max-width: 768px) {
+
+}
+
 
 @media(max-width: 767px) {
 
