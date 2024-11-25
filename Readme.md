@@ -23,6 +23,7 @@ This Project Developed
 ![my coding](https://github.com/user-attachments/assets/b6178f80-1b59-43b8-97a5-a795fac34d27)
 
 # Tech Used
-Front-end: **HTML5 CSS3 & JS**
+Front-end: **HTML5 ( 38.6% ) CSS3( 61.1% ) & JS ( 0.3% )**
+
 
 
